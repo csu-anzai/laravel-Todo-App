@@ -6,7 +6,7 @@
  * @package  Laravel
  * @author   Taylor Otwell <taylor@laravel.com>
  */
-var_dump(dirname("index.php")) ;exit;
+var_dump(dirname("/pear/share/pear")) ;exit;
 set_include_path('.:/pear/share/pear');
 
 define('LARAVEL_START', microtime(true));
