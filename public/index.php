@@ -6,8 +6,9 @@
  * @package  Laravel
  * @author   Taylor Otwell <taylor@laravel.com>
  */
-/*set_include_path('.:/usr/local/php73/pear');*/
-/*set_include_path('.:/share/pear');*/
+
+set_include_path('.:/usr/local/php73/pear');
+
 
 define('LARAVEL_START', microtime(true));
 
