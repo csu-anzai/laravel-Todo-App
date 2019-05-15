@@ -7,7 +7,7 @@
  * @author   Taylor Otwell <taylor@laravel.com>
  */
 
-/*set_include_path('.:/../../share/pear');*/
+set_include_path('.:/../pear');
 
 define('LARAVEL_START', microtime(true));
 
