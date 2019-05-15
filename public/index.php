@@ -8,7 +8,7 @@
  */
 
 set_include_path('.:/pear/share/pear');
-
+echo dirname("index.php");
 define('LARAVEL_START', microtime(true));
 
 /*
