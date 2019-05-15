@@ -6,8 +6,8 @@
  * @package  Laravel
  * @author   Taylor Otwell <taylor@laravel.com>
  */
-var_dump(__DIR__); exit;
-set_include_path('../../../pear/share/pear');
+
+set_include_path('/home/clio2268/pear/share/pear');
 
 define('LARAVEL_START', microtime(true));
 
