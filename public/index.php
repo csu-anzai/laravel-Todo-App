@@ -7,7 +7,7 @@
  * @author   Taylor Otwell <taylor@laravel.com>
  */
 
-
+set_include_path('.:/home/clio2268/pear');
 
 define('LARAVEL_START', microtime(true));
 
