@@ -74,6 +74,28 @@
         </style>
     </head>
     <body>
+
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId      : '669471600192235',
+                cookie     : true,
+                xfbml      : true,
+                version    : 'v3.3'
+            });
+
+            FB.AppEvents.logPageView();
+
+        };
+
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -102,6 +124,9 @@
                     <a href="https://nova.laravel.com">Nova</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <button onclick='FB.AppEvents.logEvent("buttonClicked")'>
+                        Click me
+                    </button>
                 </div>
             </div>
         </div>
