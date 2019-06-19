@@ -7,7 +7,17 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
+import Vue from 'vue'
+import BootstrapVue from 'bootstrap-vue'
+import vueHeadful from 'vue-headful';
+import {VTooltip, VPopover, VClosePopover} from 'v-tooltip'
 
+VTooltip.options.popover.defaultPlacement = 'bottom-end';
+Vue.component('vue-headful', vueHeadful);
+Vue.directive('tooltip', VTooltip);
+Vue.directive('close-popover', VClosePopover);
+Vue.component('v-popover', VPopover);
+Vue.use(BootstrapVue);
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue

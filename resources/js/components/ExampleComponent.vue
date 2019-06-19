@@ -18,6 +18,14 @@
     export default {
         mounted() {
             console.log('Component mounted.')
-        }
+        },
+        methods: {
+            recaptcha() {
+                this.$recaptcha('login').then((token) => {
+                    console.log(token) // Will print the token
+                })
+            }
+        },
+        template: '<button @click="recaptcha">Execute recaptcha</button>'
     }
 </script>
