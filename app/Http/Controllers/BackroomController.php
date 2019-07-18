@@ -23,6 +23,6 @@ class BackroomController extends Controller
      */
     public function index()
     {
-        return view('backroom');
+        return view('layouts.backroom');
     }
 }

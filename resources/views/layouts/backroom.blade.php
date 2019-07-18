@@ -55,23 +55,19 @@
 <div id="app">
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
         <div class="container">
-
             <a class="navbar-brand" href="{{ url('/') }}">
                 <img src="images/cfsclogo5.svg" height="40" class="d-inline-block align-top" alt="">
-
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="{{ __('Toggle navigation') }}">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <!-- Left Side Of Navbar -->
                 <ul class="navbar-nav mr-auto">
 
                 </ul>
-
                 <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ml-auto">
                     <!-- Authentication Links -->
@@ -108,7 +104,32 @@
         </div>
     </nav>
     <main class="py-4">
-        @yield('content')
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+                    <div class="card">
+                        <div class="card-header">Dashboard</div>
+
+                        <div class="card-body">
+
+                            @yield('backroomcontent')
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+
+                    @section('backroomside')
+                        This is the master sidebar.
+                    @show
+                </div>
+            </div>
+        </div>
+
     </main>
 </div>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -117,8 +138,6 @@
         google_ad_client: "ca-pub-6198365168970959",
         enable_page_level_ads: true
     });
-</script>
-<script>
     // Check that service workers are registered
     if ('serviceWorker' in navigator) {
         // Use the window load event to keep the page load performant
@@ -127,5 +146,8 @@
         });
     }
 </script>
+
 </body>
 </html>
+
+
