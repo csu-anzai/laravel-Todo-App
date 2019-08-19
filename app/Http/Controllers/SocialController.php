@@ -13,12 +13,13 @@ class SocialController extends Controller
     public function redirect(Request $request)
     {
         $provider=$request->route('provider');
-        dd($provider);
+
         return Socialite::driver($provider)->redirect();
     }
 
-    public function callback($provider)
+    public function callback(Request $request)
     {
+        $provider=$request->route('provider');
         $getInfo = Socialite::driver($provider)->user();
         dd($getInfo)
 ;        $user = User::where('provider_id', $getInfo->id)->first();
