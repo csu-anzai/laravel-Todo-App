@@ -10,8 +10,10 @@ use App\User;
 
 class SocialController extends Controller
 {
-    public function redirect($provider)
+    public function redirect(Request $request)
     {
+        $provider=$request->route('provider');
+        dd($provider);
         return Socialite::driver($provider)->redirect();
     }
 
