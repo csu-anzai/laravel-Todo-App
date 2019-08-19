@@ -115,7 +115,12 @@
                                         <strong>{{ $errors->first('g-recaptcha-response') }}</strong>
                                     </span>
                                     @endif
-                                    <div class="g-recaptcha " data-sitekey="{{env('RECAPTCHA_SITE_KEY')}}"></div>
+                                        @if(env('RECAPTCHA_SITE_KEY'))
+                                            <div class="g-recaptcha"
+                                                 data-sitekey="{{env('RECAPTCHA_SITE_KEY')}}">
+                                            </div>
+                                        @endif
+
                                 </div>
                             </div>
                             <div class="form-group">
