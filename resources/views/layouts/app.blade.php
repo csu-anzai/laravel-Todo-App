@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <script src="{{ asset('js/app.js') }}" defer></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140847010-1"></script>
@@ -22,7 +21,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'Laravel') }}</title>
     <!-- Scripts -->
-
+    <script src="{{ asset('js/app.js') }}" defer></script>
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
@@ -63,14 +62,11 @@
                 leave-active-class="animated bounceOutRight"
                 leave-class="animated bounceOutRight"
         >
-            <div class="spring-spinner">
-                <div class="spring-spinner-part top">
-                    <div class="spring-spinner-rotator"></div>
-                </div>
-                <div class="spring-spinner-part bottom">
-                    <div class="spring-spinner-rotator"></div>
-                </div>
-            </div>
+            <half-circle-spinner class=""
+                                 :animation-duration="1500"
+                                 :size="100"
+                                 color="#ff1d5e"
+            />
         </transition>
     </div>
 
