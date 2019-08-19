@@ -16,7 +16,7 @@ import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import 'babel-polyfill'
 import 'vuetify/src/stylus/app.styl'
-import 'material-design-icons-iconfont/dist/material-design-icons.css'
+import 'material-design-icons/iconfont/material-icons.css'
 
 VTooltip.options.popover.defaultPlacement = 'bottom-end';
 Vue.component('vue-headful', vueHeadful);
