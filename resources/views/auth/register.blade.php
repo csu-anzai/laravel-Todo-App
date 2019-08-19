@@ -20,7 +20,7 @@
                                 <label for="name" class="col-md-4 control-label">Name</label>
 
                                 <div class="col-md-6">
-                                    @if($name)
+                                    @if(isset($name))
                                         <input id="name" type="text" class="form-control" name="name"
                                                value="{{ $name }}" required
                                                autofocus>
@@ -57,7 +57,7 @@
                                 <label for="email" class="col-md-4 control-label">E-Mail Address</label>
 
                                 <div class="col-md-6">
-                                    @if($email)
+                                    @if(isset($email))
                                         <input id="email" type="email" class="form-control" name="email"
                                                value="{{ $email }}" required>
                                     @else
@@ -95,13 +95,13 @@
                                            required>
                                 </div>
                             </div>
-                            @if($provider)
+                            @if(isset($provider))
                                 <input id="provider" type="hidden" class="form-control"
                                        name="provider"
                                 >
 
                             @endif
-                            @if($provider_id)
+                            @if(isset($provider_id))
                                 <input id="provider_id" type="hidden" class="form-control"
                                        name="provider_id"
                                 >
