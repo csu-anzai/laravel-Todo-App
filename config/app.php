@@ -12,6 +12,7 @@ return [
     | any other location as required by the application or its packages.
     |
     */
+    'ssl_verify' => false,
     'debug_blacklist' => [
         '_ENV' => [
             'APP_KEY',

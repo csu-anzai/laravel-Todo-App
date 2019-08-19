@@ -16,7 +16,7 @@ import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import 'babel-polyfill'
 import 'vuetify/src/stylus/app.styl'
-
+import VueRecaptcha from 'vue-recaptcha';
 
 VTooltip.options.popover.defaultPlacement = 'bottom-end';
 Vue.component('vue-headful', vueHeadful);
@@ -108,6 +108,6 @@ new Vue({
 
     },
     components: {
-        HalfCircleSpinner
+        HalfCircleSpinner, VueRecaptcha
     }
 });

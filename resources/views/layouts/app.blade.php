@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <script src="https://www.google.com/recaptcha/api.js?render=explicit"
-            async defer></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit" async defer>
+    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140847010-1"></script>
     <script>
@@ -237,6 +237,10 @@
             navigator.serviceWorker.register('/service-worker.js');
         });
     }
+</script>
+
+<script src="https://www.google.com/recaptcha/api.js?render=explicit"
+        async defer>
 </script>
 </body>
 </html>
