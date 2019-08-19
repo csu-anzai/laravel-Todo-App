@@ -2,51 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c65da59-e47e-417a-8eda-a372494c8e05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fa-brands-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fa-brands-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fa-brands-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fa-brands-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fa-brands-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fa-solid-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fa-solid-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fa-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fa-solid-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fa-solid-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_animated.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_bordered-pulled.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_core.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_fixed-width.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_larger.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_rotated-flipped.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_screen-reader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_shims.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_stacked.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/brands.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/fontawesome.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/regular.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/solid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/v4-shims.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/webfonts/fa-brands-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/webfonts/fa-brands-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/webfonts/fa-brands-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/webfonts/fa-brands-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/webfonts/fa-brands-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/webfonts/fa-regular-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/webfonts/fa-regular-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/webfonts/fa-regular-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/webfonts/fa-regular-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/webfonts/fa-regular-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/webfonts/fa-solid-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/webfonts/fa-solid-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/webfonts/fa-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/webfonts/fa-solid-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/webfonts/fa-solid-900.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,7 +25,7 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SocialController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="233">
-              <caret line="19" column="56" lean-forward="true" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+              <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
               <folding>
                 <element signature="e#39#67#0#PHP" expanded="true" />
               </folding>
@@ -81,8 +36,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/services.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="49" column="64" selection-start-line="49" selection-start-column="64" selection-end-line="49" selection-end-column="64" />
+            <state relative-caret-position="305">
+              <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="37" />
               <folding>
                 <element signature="e#21#520#0#PHP" />
                 <element signature="e#539#698#1#PHP" />
@@ -108,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="4" column="21" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="21" />
+            <state relative-caret-position="120">
+              <caret line="5" column="70" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -253,7 +208,6 @@
         <option value="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" />
         <option value="$PROJECT_DIR$/public/css/animation.css" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
-        <option value="$PROJECT_DIR$/resources/js/app.js" />
         <option value="$PROJECT_DIR$/resources/sass/app.scss" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
@@ -263,6 +217,7 @@
         <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/SocialController.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
+        <option value="$PROJECT_DIR$/resources/js/app.js" />
         <option value="$PROJECT_DIR$/config/services.php" />
       </list>
     </option>
@@ -382,7 +337,13 @@
             <path>
               <item name="todoApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="todoApp" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todoApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todoApp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="todoApp" type="b2602c69:ProjectViewProjectNode" />
@@ -463,12 +424,24 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="production" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="production" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="npm.dev" />
       <item itemvalue="PHPUnit.phpunit.xml" />
+      <item itemvalue="npm.production" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.production" />
         <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
@@ -513,7 +486,7 @@
       <workItem from="1565869675605" duration="1204000" />
       <workItem from="1566108409201" duration="598000" />
       <workItem from="1566129750257" duration="591000" />
-      <workItem from="1566208523710" duration="9083000" />
+      <workItem from="1566208523710" duration="9645000" />
     </task>
     <task id="LOCAL-00001" summary="include path">
       <created>1557958566865</created>
@@ -837,11 +810,18 @@
       <option name="project" value="LOCAL" />
       <updated>1566229010618</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="under construction">
+      <created>1566229783856</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1566229783856</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150626000" />
+    <option name="totallyTimeSpent" value="151188000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -854,15 +834,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1383" y="-298" width="1521" height="841" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.69101125" visible="true" weight="0.23271732" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.68817204" visible="true" weight="0.23271732" />
       <window_info id="Structure" order="1" sideWeight="0.50592214" side_tool="true" weight="0.16599463" />
-      <window_info id="npm" order="2" sideWeight="0.30964467" side_tool="true" weight="0.16599463" />
-      <window_info id="Favorites" order="3" sideWeight="0.30898875" side_tool="true" weight="0.16599463" />
+      <window_info id="npm" order="2" sideWeight="0.31182796" side_tool="true" visible="true" weight="0.23271732" />
+      <window_info id="Favorites" order="3" sideWeight="0.31182796" side_tool="true" weight="0.23271732" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.07777778" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.1830161" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1830161" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3977591" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1168,17 +1147,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="97" column="92" selection-start-line="97" selection-start-column="76" selection-end-line="97" selection-end-column="92" />
-          <folding>
-            <element signature="e#0#221#0" />
-            <element signature="e#2327#3201#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-31">
@@ -1299,27 +1267,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SocialController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
-          <caret line="19" column="56" lean-forward="true" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+          <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
           <folding>
             <element signature="e#39#67#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="97" column="80" selection-start-line="97" selection-start-column="80" selection-end-line="97" selection-end-column="80" />
+          <folding>
+            <element signature="e#0#221#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="70" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/services.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="49" column="64" selection-start-line="49" selection-start-column="64" selection-end-line="49" selection-end-column="64" />
+        <state relative-caret-position="305">
+          <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="37" />
           <folding>
             <element signature="e#21#520#0#PHP" />
             <element signature="e#539#698#1#PHP" />
