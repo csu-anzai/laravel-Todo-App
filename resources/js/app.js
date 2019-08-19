@@ -94,8 +94,7 @@ const app = new Vue({
         }
     },
     beforeMount() {
-        this.startSite();
-        this.homePageClass = this.currentRoute === "/" ? "homePageClass" : "notHomePageClass";
+
 
     },
     created() {
@@ -103,6 +102,8 @@ const app = new Vue({
 
     },
     mounted() {
+        this.startSite();
+        this.homePageClass = this.currentRoute === "/" ? "homePageClass" : "notHomePageClass";
         this.scroll();
         this.loadSite();
 
