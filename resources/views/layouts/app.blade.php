@@ -56,25 +56,9 @@
     }(document, 'script', 'facebook-jssdk'));
 </script>
 <div id="app">
-    <div v-if="!siteStart" class="w-100 vh-100 mx-auto my-auto  spinnerContainer">
-        <transition
-                name="custom-classes-transition"
-                enter-active-class="animated flipInX"
-                leave-active-class="animated bounceOutRight"
-                leave-class="animated bounceOutRight"
-        >
-            <div class="spring-spinner">
-                <div class="spring-spinner-part top">
-                    <div class="spring-spinner-rotator"></div>
-                </div>
-                <div class="spring-spinner-part bottom">
-                    <div class="spring-spinner-rotator"></div>
-                </div>
-            </div>
-        </transition>
-    </div>
 
-    <div id="contents" v-if="siteStart">
+
+    <div id="contents" >
         @if(Request::is('/'))
             <div class="container-background  ">
                 <div class="background"></div>
