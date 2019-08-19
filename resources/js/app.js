@@ -46,7 +46,7 @@ Vue.component('categoriesside-component', require('./components/backroom/Categor
  */
 import {HalfCircleSpinner} from 'epic-spinners'
 
-const app = new Vue({
+new Vue({
     el: '#app',
     data: {
         currentRoute: window.location.pathname,
