@@ -102,10 +102,11 @@ const app = new Vue({
 
     },
     mounted() {
-        this.startSite();
+
         this.homePageClass = this.currentRoute === "/" ? "homePageClass" : "notHomePageClass";
         this.scroll();
         this.loadSite();
+        this.startSite();
 
     },
     components: {

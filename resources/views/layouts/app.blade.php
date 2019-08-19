@@ -62,11 +62,14 @@
                 leave-active-class="animated bounceOutRight"
                 leave-class="animated bounceOutRight"
         >
-            <half-circle-spinner class=""
-                                 :animation-duration="1500"
-                                 :size="100"
-                                 color="#ff1d5e"
-            />
+            <div class="spring-spinner">
+                <div class="spring-spinner-part top">
+                    <div class="spring-spinner-rotator"></div>
+                </div>
+                <div class="spring-spinner-part bottom">
+                    <div class="spring-spinner-rotator"></div>
+                </div>
+            </div>
         </transition>
     </div>
 
