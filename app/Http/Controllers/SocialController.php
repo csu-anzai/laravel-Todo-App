@@ -21,7 +21,7 @@ class SocialController extends Controller
     {
         $provider=$request->route('provider');
         $getInfo = Socialite::driver($provider)->user();
-
+dd($getInfo);
         $user = User::where('provider_id', $getInfo->id)->first();
         if (!$user) {
             return redirect()->action(
