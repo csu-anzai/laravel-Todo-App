@@ -101,8 +101,8 @@ class RegisterController extends Controller
     {
         return "Done!";
     }
-    public function showReg(Request $request){
-        dd($request);
+    public function showReg(){
+        dd();
       /*  return view('auth.register', ['name' => $getInfo->name, 'email' => $getInfo->email, 'provider' => $provider,
             'provider_id' => $getInfo->id]);*/
     }
