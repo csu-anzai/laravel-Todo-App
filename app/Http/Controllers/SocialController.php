@@ -23,7 +23,7 @@ class SocialController extends Controller
         $getInfo = Socialite::driver($provider)->user();
 
         $user = User::where('provider_id', $getInfo->id)->first();
-        dd($user);
+       
         if (!$user) {
             return redirect()->action(
                 'Auth\RegisterController@showReg', ['name' => $getInfo->name, 'email' => $getInfo->email, 'provider' => $provider,
