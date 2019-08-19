@@ -21,7 +21,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/backroom';
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
@@ -95,7 +95,7 @@ class RegisterController extends Controller
             return "Whoops! something went wrong.";
         }
 
-        return redirect()->to('/backroom');
+        return redirect()->to('/');
     }
     public function captcha(ReCaptchaFormRequest $reCaptchaFormRequest)
     {

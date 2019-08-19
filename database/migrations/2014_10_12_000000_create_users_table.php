@@ -25,6 +25,8 @@ class CreateUsersTable extends Migration
             $table->string('activation_code')->nullable();
             $table->boolean('status')->default(0);
             $table->boolean('allowed')->default(0);
+            $table->string('provider');
+            $table->string('provider_id');
             $table->rememberToken();
             $table->timestamps();
         });

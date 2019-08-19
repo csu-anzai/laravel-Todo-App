@@ -1,7 +1,8 @@
 <?php
 
 
-
+Route::get('/auth/redirect/{provider}', 'SocialController@redirect');
+Route::get('/callback/{provider}', 'SocialController@callback');
 Route::get('/backroom', 'BackroomController@index')->name('backroom');
 Route::get('/', 'HomeController@index')->name('home');
 

@@ -1,0 +1,16 @@
+@keyframes example {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: black;
+    }
+}
+@-webkit-keyframes example {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: black;
+    }
+}
