@@ -18,7 +18,8 @@ class SocialController extends Controller
     public function callback($provider)
     {
         $getInfo = Socialite::driver($provider)->user();
-        $user = User::where('provider_id', $getInfo->id)->first();
+        dd($getInfo)
+;        $user = User::where('provider_id', $getInfo->id)->first();
         if (!$user) {
             return view('auth.register', ['name' => $getInfo->name, 'email' => $getInfo->email, 'provider' => $provider,
                 'provider_id' => $getInfo->id]);
