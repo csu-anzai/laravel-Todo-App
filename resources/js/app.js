@@ -49,6 +49,7 @@ import {HalfCircleSpinner} from 'epic-spinners'
 const app = new Vue({
     el: '#app',
     data: {
+        siteStart: false,
         currentRoute: window.location.pathname,
         drawer: false,
         year: new Date().getFullYear(),
@@ -60,7 +61,7 @@ const app = new Vue({
         scrolledTop: true,
         transparentNav: 'transparentNav',
         loaded: false,
-        siteStart: false,
+
         homePageClass: "",
     },
     methods: {
