@@ -22,14 +22,11 @@ class SocialController extends Controller
         $provider=$request->route('provider');
         $getInfo = Socialite::driver($provider)->user();
 
-        $user = User::where('provider_id', $getInfo->id)->first();
-
+;        $user = User::where('provider_id', $getInfo->id)->first();
         if (!$user) {
-            return redirect()->action(
-                'HomeController@showReg', ['name' => $getInfo->name, 'email' => $getInfo->email, 'provider' => $provider,
-                    'provider_id' => $getInfo->id]
-            );
 
+            return view('auth.register', ['name' => $getInfo->name, 'email' => $getInfo->email, 'provider' => $provider,
+                'provider_id' => $getInfo->id]);
         }
         return $user;
         /* $user = $this->createUser($getInfo, $provider);

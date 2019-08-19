@@ -28,9 +28,4 @@ class HomeController extends Controller
             'auth_user' => Auth::user()
         ]);
     }
-    public function showReg(){
-        return view('auth.register');
-        /*  return view('auth.register', ['name' => $getInfo->name, 'email' => $getInfo->email, 'provider' => $provider,
-              'provider_id' => $getInfo->id]);*/
-    }
 }
