@@ -47,6 +47,6 @@ return [
     'facebook' => [
         'client_id' => '669471600192235',
         'client_secret' => '540d5fff84396bd7ee8ca471b3011bfa',
-        'redirect' => 'https://cfscastillo.com',
+        'redirect' => 'https://cfscastillo.com/callback/facebook',
     ],
 ];
