@@ -29,7 +29,7 @@ class HomeController extends Controller
         ]);
     }
     public function showReg(){
-        dd();
+        return view('auth.register');
         /*  return view('auth.register', ['name' => $getInfo->name, 'email' => $getInfo->email, 'provider' => $provider,
               'provider_id' => $getInfo->id]);*/
     }
