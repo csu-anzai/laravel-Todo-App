@@ -34,7 +34,6 @@
         "bootstrap-vue": "^2.0.0-rc.24",
         "epic-spinners": "^1.1.0",
         "material-design-icons": "^3.0.1",
-        "material-design-icons-iconfont": "^5.0.1",
         "v-tooltip": "^2.0.2",
         "vue-headful": "^2.0.1",
         "vuetify": "^1.5.16"
