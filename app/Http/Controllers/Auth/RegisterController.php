@@ -11,7 +11,10 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Exception;
 use Illuminate\Validation\ValidationException;
+
+use Illuminate\Support\Facades\File;
 use App\Http\Requests\ReCaptchaFormRequest;
+
 class RegisterController extends Controller
 {
     use RegistersUsers;
@@ -45,16 +48,22 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-            'username'     => ['required', 'string', 'max:255', 'unique:users'],
-            'g-recaptcha-response'=>['required','recaptcha'],
-            'avatar' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'username' => ['required', 'string', 'max:255', 'unique:users'],
+            'g-recaptcha-response' => ['required', 'recaptcha'],
+            'provider' => ['string', 'max:255'],
+            'provider_id' => ['string', 'max:255'],
+            'avatar' => ['string', 'max:255'],
+            'uploadedNewImage'=> ['boolean'],
+
         ]);
         try {
-            $imageName = time().'.'.request()->avatar->getClientOriginalExtension();
-            request()->avatar->move(public_path('images'), $imageName);
-            $validatedData['password']        = bcrypt(array_get($validatedData, 'password'));
-            $validatedData['activation_code'] = str_random(30).time();
-            $user                             = app(User::class)->create($validatedData);
+            $validatedData['password'] = bcrypt(array_get($validatedData, 'password'));
+            $validatedData['activation_code'] = str_random(30) . time();
+            $user = app(User::class)->create($validatedData);
+            if ($validatedData['uploadedNewImage']==1 ) {
+
+                File::move(public_path('avatar_temp') . '/' . $validatedData['avatar'], public_path('avatar') . '/' . $validatedData['avatar']);
+            }
 
         } catch (Exception $exception) {
             logger()->error($exception);
@@ -80,18 +89,17 @@ class RegisterController extends Controller
             if (!$user) {
                 return "The code does not exist for any user in our system.";
             }
-            $user->status          = 1;
+            $user->status = 1;
             $user->activation_code = null;
-            $isAllowed=$user->allowed;
+            $isAllowed = $user->allowed;
 
             $user->save();
 
-            if ($isAllowed==1) {
+            if ($isAllowed == 1) {
                 auth()->login($user);
+            } else {
+                return redirect()->to('/login');
             }
-           else{
-               return redirect()->to('/login');
-           }
         } catch (Exception $exception) {
             logger()->error($exception);
 
@@ -100,9 +108,11 @@ class RegisterController extends Controller
 
         return redirect()->to('/');
     }
+
     public function captcha(ReCaptchaFormRequest $reCaptchaFormRequest)
     {
         return "Done!";
     }
+
 
 }

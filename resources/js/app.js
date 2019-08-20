@@ -18,6 +18,7 @@ import 'babel-polyfill'
 import 'vuetify/src/stylus/app.styl'
 import VueRecaptcha from 'vue-recaptcha';
 import AvatarCropper from "vue-avatar-cropper"
+
 VTooltip.options.popover.defaultPlacement = 'bottom-end';
 Vue.component('vue-headful', vueHeadful);
 Vue.directive('tooltip', VTooltip);
@@ -45,6 +46,12 @@ Vue.component('categoriesside-component', require('./components/backroom/Categor
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 import {HalfCircleSpinner} from 'epic-spinners'
+import jQuery from 'jquery'
+
+let $ = jQuery;
+let csrf_token = $('meta[name="csrf-token"]').attr('content');
+let userID = $('#provider_id').val();
+let userAvatar = $('#userAvatar').val();
 
 new Vue({
     el: '#app',
@@ -62,11 +69,16 @@ new Vue({
         loaded: false,
         siteStart: false,
         homePageClass: "",
+        uploadedNewImage: 0,
         user: {
 
-            avatar: "https://i.pravatar.cc/300"
+            avatar: userAvatar
         },
         message: "ready",
+        token: csrf_token,
+        userID: userID,
+        tempImage: ""
+
     },
     methods: {
         scroll() {
@@ -98,21 +110,40 @@ new Vue({
             this.loaded = true;
         },
         handleUploading(form, xhr) {
+            if (this.tempImage) {
+                axios.post('/deleteTempImage', {
+                    tempImage: this.tempImage,
+                })
+                    .then(function (response) {
+                        console.log(response.status);
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
+            }
             this.message = "uploading...";
         },
         handleUploaded(response) {
+
             if (response.status == "success") {
-                this.user.avatar = response.url;
+                this.user.avatar = 'avatar_temp/' + response.file;
+                this.tempImage = response.file;
+                $('#userAvatar').val(response.file);
+                this.uploadedNewImage = 1;
                 // Maybe you need call vuex action to
                 // update user avatar, for example:
                 // this.$dispatch('updateUser', {avatar: response.url})
                 this.message = "user avatar updated.";
+
+
             }
         },
         handleCompleted(response, form, xhr) {
+
             this.message = "upload completed.";
         },
         handlerError(message, type, xhr) {
+
             this.message = "Oops! Something went wrong...";
         }
     },
@@ -131,6 +162,6 @@ new Vue({
 
     },
     components: {
-        HalfCircleSpinner, VueRecaptcha,AvatarCropper
+        HalfCircleSpinner, VueRecaptcha, AvatarCropper
     }
 });

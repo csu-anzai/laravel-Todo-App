@@ -191,7 +191,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         // Other service providers…
         Laravel\Socialite\SocialiteServiceProvider::class,
-        Barryvdh\Debugbar\ServiceProvider::class
+
 
 
     ],
@@ -246,7 +246,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         // Other aliases…
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
-        'Debugbar' => Barryvdh\Debugbar\Facade::class,
+
 
     ],
 

@@ -1,6 +1,6 @@
 <?php
-
-
+Route::post('/deleteTempImage', 'PostController@deleteTempImage');
+Route::post('image-upload', 'PostController@imageUploadPost');
 Route::get('/auth/redirect/{provider}', 'SocialController@redirect');
 Route::get('/callback/{provider}', 'SocialController@callback');
 Route::get('/backroom', 'BackroomController@index')->name('backroom');

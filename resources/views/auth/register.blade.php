@@ -2,6 +2,7 @@
 
 @section('content')
     <div class="container">
+
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
@@ -12,17 +13,30 @@
                         </div>
                     @endif
                     <div class="panel-body">
-                        <form class="form-horizontal" method="POST" enctype="multipart/form-data" action="{{ route('register') }}">
+                        <form class="form-horizontal" method="POST" enctype="multipart/form-data"
+                              action="{{ route('register') }}">
                             {{ csrf_field() }}
+                            @if(session()->has('socialite'))
+                                <input id="provider" type="hidden" class="form-control"
+                                       name="provider" value="{{session()->get('socialite')->user['provider'] }}"
+                                >
+                                <input id="provider_id" type="hidden" class="form-control"
+                                       name="provider_id" value="{{session()->get('socialite')->id }}"
+                                >
+                            @endif
                             <div class="form-group{{ $errors->has('avatar') ? ' has-error' : '' }}">
                                 <label for="avatar" class="col-md-4 control-label"></label>
                                 <div class="col-md-3">
                                     @if(session()->has('socialite'))
+                                        <input id="userAvatar" type="hidden"  name="avatar" value="{{ session()->get('socialite')->avatar}}">
+                                    <input  type="hidden" name="uploadedNewImage" :value="uploadedNewImage">
                                         <div class="card vue-avatar-cropper-demo text-center">
                                             <div class="card-body">
-                                                <img src="{{ session()->get('socialite')->avatar}}" class="card-img avatar" />
+                                                <img  :src="user.avatar"
+                                                     class="card-img avatar"/>
                                                 <div class="card-img-overlay">
-                                                    <button class="btn btn-primary btn-sm" id="pick-avatar">Upload</button>
+                                                    <button class="btn btn-primary btn-sm" id="pick-avatar">Upload
+                                                    </button>
                                                 </div>
                                             </div>
                                             <div class="card-footer text-muted" v-html="message"></div>
@@ -32,26 +46,30 @@
                                                     v-on:completed="handleCompleted"
                                                     v-on:error="handlerError"
                                                     :upload-headers="{'X-Requested-With': 'XMLHttpRequest'}"
-                                            trigger="#pick-avatar"
-                                            upload-url="" />
+                                                    trigger="#pick-avatar" :upload-form-data="{'_token':token,'userID':userID}"
+                                                    upload-url="image-upload" :labels="{ submit:'upload', cancel: 'cancel'}"/>
                                         </div>
                                     @else
                                         <div class="card vue-avatar-cropper-demo text-center">
-                                            <div class="card-body">
-                                                <img :src="user.avatar" class="card-img avatar" />
+                                            <div rounded="circle" class="card-body">
+
+                                                <img :src="user.avatar" class="card-img avatar"/>
                                                 <div class="card-img-overlay">
-                                                    <button class="btn btn-primary btn-sm" id="pick-avatar">Upload</button>
+                                                    <button class="btn btn-primary btn-sm" id="pick-avatar">Upload
+                                                    </button>
                                                 </div>
 
                                             </div>
                                             <div class="card-footer text-muted" v-html="message"></div>
+
                                             <avatar-cropper
                                                     v-on:uploading="handleUploading"
                                                     v-on:uploaded="handleUploaded"
                                                     v-on:completed="handleCompleted"
                                                     v-on:error="handlerError"
-                                                    trigger="#pick-avatar"
-                                                    upload-url="" />
+                                                    trigger="#pick-avatar" :upload-form-data="{'_token':token}"
+                                                    upload-url="image-upload"
+                                                    :labels="{ submit:'upload', cancel: 'cancel'}"/>
                                         </div>
 
                                     @endif
@@ -93,7 +111,7 @@
                                                value="{{ session()->get('socialite')->name}}" required
                                                autofocus>
                                     @else
-                                        <input id="name" type="text" class="form-control" name="username"
+                                        <input id="username" type="text" class="form-control" name="username"
                                                value="{{ old('username') }}" required
                                                autofocus>
                                     @endif
@@ -147,15 +165,7 @@
                                            required>
                                 </div>
                             </div>
-                            @if(session()->has('socialite'))
-                                <input id="provider" type="hidden" class="form-control"
-                                       name="provider" value="{{session()->get('socialite')->user['provider'] }}"
-                                >
-                                <input id="provider_id" type="hidden" class="form-control"
-                                       name="provider_id" value="{{session()->get('socialite')->id }}"
-                                >
 
-                            @endif
 
                             <div class="form-group {{ $errors->has('g-recaptcha-response') ? ' has-error' : '' }}">
                                 <div class="col-md-12">
