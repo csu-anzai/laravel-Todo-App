@@ -17,7 +17,7 @@ import 'vuetify/dist/vuetify.min.css'
 import 'babel-polyfill'
 import 'vuetify/src/stylus/app.styl'
 import VueRecaptcha from 'vue-recaptcha';
-
+import AvatarCropper from "vue-avatar-cropper"
 VTooltip.options.popover.defaultPlacement = 'bottom-end';
 Vue.component('vue-headful', vueHeadful);
 Vue.directive('tooltip', VTooltip);
@@ -62,6 +62,11 @@ new Vue({
         loaded: false,
         siteStart: false,
         homePageClass: "",
+        user: {
+
+            avatar: "https://i.pravatar.cc/300"
+        },
+        message: "ready",
     },
     methods: {
         scroll() {
@@ -91,6 +96,24 @@ new Vue({
         },
         loadIt() {
             this.loaded = true;
+        },
+        handleUploading(form, xhr) {
+            this.message = "uploading...";
+        },
+        handleUploaded(response) {
+            if (response.status == "success") {
+                this.user.avatar = response.url;
+                // Maybe you need call vuex action to
+                // update user avatar, for example:
+                // this.$dispatch('updateUser', {avatar: response.url})
+                this.message = "user avatar updated.";
+            }
+        },
+        handleCompleted(response, form, xhr) {
+            this.message = "upload completed.";
+        },
+        handlerError(message, type, xhr) {
+            this.message = "Oops! Something went wrong...";
         }
     },
     beforeMount() {
@@ -108,6 +131,6 @@ new Vue({
 
     },
     components: {
-        HalfCircleSpinner, VueRecaptcha
+        HalfCircleSpinner, VueRecaptcha,AvatarCropper
     }
 });

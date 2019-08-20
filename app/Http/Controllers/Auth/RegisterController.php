@@ -46,9 +46,12 @@ class RegisterController extends Controller
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'username'     => ['required', 'string', 'max:255', 'unique:users'],
-            'g-recaptcha-response'=>['required','recaptcha']
+            'g-recaptcha-response'=>['required','recaptcha'],
+            'avatar' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
         try {
+            $imageName = time().'.'.request()->avatar->getClientOriginalExtension();
+            request()->avatar->move(public_path('images'), $imageName);
             $validatedData['password']        = bcrypt(array_get($validatedData, 'password'));
             $validatedData['activation_code'] = str_random(30).time();
             $user                             = app(User::class)->create($validatedData);

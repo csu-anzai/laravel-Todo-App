@@ -11,20 +11,64 @@
                             {{ session()->get('message') }}
                         </div>
                     @endif
-                    @foreach (Session::get('provider') as $provider_info)
-                        {{$provider_info}}
-                    @endforeach
                     <div class="panel-body">
-                        <form class="form-horizontal" method="POST" action="{{ route('register') }}">
+                        <form class="form-horizontal" method="POST" enctype="multipart/form-data" action="{{ route('register') }}">
                             {{ csrf_field() }}
+                            <div class="form-group{{ $errors->has('avatar') ? ' has-error' : '' }}">
+                                <label for="avatar" class="col-md-4 control-label"></label>
+                                <div class="col-md-3">
+                                    @if(session()->has('socialite'))
+                                        <div class="card vue-avatar-cropper-demo text-center">
+                                            <div class="card-body">
+                                                <img src="{{ session()->get('socialite')->avatar}}" class="card-img avatar" />
+                                                <div class="card-img-overlay">
+                                                    <button class="btn btn-primary btn-sm" id="pick-avatar">Upload</button>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer text-muted" v-html="message"></div>
+                                            <avatar-cropper
+                                                    v-on:uploading="handleUploading"
+                                                    v-on:uploaded="handleUploaded"
+                                                    v-on:completed="handleCompleted"
+                                                    v-on:error="handlerError"
+                                                    :upload-headers="{'X-Requested-With': 'XMLHttpRequest'}"
+                                            trigger="#pick-avatar"
+                                            upload-url="" />
+                                        </div>
+                                    @else
+                                        <div class="card vue-avatar-cropper-demo text-center">
+                                            <div class="card-body">
+                                                <img :src="user.avatar" class="card-img avatar" />
+                                                <div class="card-img-overlay">
+                                                    <button class="btn btn-primary btn-sm" id="pick-avatar">Upload</button>
+                                                </div>
+
+                                            </div>
+                                            <div class="card-footer text-muted" v-html="message"></div>
+                                            <avatar-cropper
+                                                    v-on:uploading="handleUploading"
+                                                    v-on:uploaded="handleUploaded"
+                                                    v-on:completed="handleCompleted"
+                                                    v-on:error="handlerError"
+                                                    trigger="#pick-avatar"
+                                                    upload-url="" />
+                                        </div>
+
+                                    @endif
+                                    @if ($errors->has('name'))
+                                        <span class="help-block">
+                                        <strong>{{ $errors->first('name') }}</strong>
+                                    </span>
+                                    @endif
+                                </div>
+                            </div>
 
                             <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                                 <label for="name" class="col-md-4 control-label">Name</label>
-
                                 <div class="col-md-6">
-                                    @if(isset($name))
+                                    @if(session()->has('socialite'))
                                         <input id="name" type="text" class="form-control" name="name"
-                                               value="{{ $name }}" required
+                                               value="{{ session()->get('socialite')->name}}" required
                                                autofocus>
                                     @else
                                         <input id="name" type="text" class="form-control" name="name"
@@ -40,13 +84,19 @@
                             </div>
 
                             <div class="form-group{{ $errors->has('username') ? ' has-error' : '' }}">
-                                <label for="name" class="col-md-4 control-label">Username</label>
+                                <label for="username" class="col-md-4 control-label">Username</label>
 
                                 <div class="col-md-6">
-                                    <input id="name" type="text" class="form-control" name="username"
-                                           value="{{ old('username') }}" required
-                                           autofocus>
+                                    @if(session()->has('socialite'))
 
+                                        <input id="username" type="text" class="form-control" name="username"
+                                               value="{{ session()->get('socialite')->name}}" required
+                                               autofocus>
+                                    @else
+                                        <input id="name" type="text" class="form-control" name="username"
+                                               value="{{ old('username') }}" required
+                                               autofocus>
+                                    @endif
                                     @if ($errors->has('username'))
                                         <span class="help-block">
                                         <strong>{{ $errors->first('username') }}</strong>
@@ -59,9 +109,9 @@
                                 <label for="email" class="col-md-4 control-label">E-Mail Address</label>
 
                                 <div class="col-md-6">
-                                    @if(isset($email))
+                                    @if(session()->has('socialite'))
                                         <input id="email" type="email" class="form-control" name="email"
-                                               value="{{ $email }}" required>
+                                               value="{{ session()->get('socialite')->email }}" required>
                                     @else
                                         <input id="email" type="email" class="form-control" name="email"
                                                value="{{ old('email') }}" required>
@@ -97,15 +147,12 @@
                                            required>
                                 </div>
                             </div>
-                            @if(isset($provider))
+                            @if(session()->has('socialite'))
                                 <input id="provider" type="hidden" class="form-control"
-                                       name="provider"
+                                       name="provider" value="{{session()->get('socialite')->user['provider'] }}"
                                 >
-
-                            @endif
-                            @if(isset($provider_id))
                                 <input id="provider_id" type="hidden" class="form-control"
-                                       name="provider_id"
+                                       name="provider_id" value="{{session()->get('socialite')->id }}"
                                 >
 
                             @endif
@@ -117,7 +164,7 @@
                                         <strong>{{ $errors->first('g-recaptcha-response') }}</strong>
                                     </span>
                                     @endif
-                                        <vue-recaptcha sitekey="6Lfzr6kUAAAAAAOzhaUmgraAWWutOjAb4gx95XL3"></vue-recaptcha>
+                                    <vue-recaptcha sitekey="6Lfzr6kUAAAAAAOzhaUmgraAWWutOjAb4gx95XL3"></vue-recaptcha>
                                 </div>
                             </div>
                             <div class="form-group">
