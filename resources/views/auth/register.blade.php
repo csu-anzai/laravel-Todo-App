@@ -11,7 +11,9 @@
                             {{ session()->get('message') }}
                         </div>
                     @endif
-
+                    @foreach (Session::get('provider') as $provider_info)
+                        {{$provider_info}}
+                    @endforeach
                     <div class="panel-body">
                         <form class="form-horizontal" method="POST" action="{{ route('register') }}">
                             {{ csrf_field() }}

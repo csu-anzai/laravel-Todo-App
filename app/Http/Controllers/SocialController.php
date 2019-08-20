@@ -24,9 +24,9 @@ class SocialController extends Controller
 
 ;        $user = User::where('provider_id', $getInfo->id)->first();
         if (!$user) {
-
-            return view('auth.register', ['name' => $getInfo->name, 'email' => $getInfo->email, 'provider' => $provider,
-                'provider_id' => $getInfo->id]);
+            return redirect('/register')->with('socialite', $getInfo);
+            /*return view('auth.register', ['name' => $getInfo->name, 'email' => $getInfo->email, 'provider' => $provider,
+                'provider_id' => $getInfo->id]);*/
         }
         return $user;
         /* $user = $this->createUser($getInfo, $provider);
