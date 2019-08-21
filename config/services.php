@@ -47,6 +47,11 @@ return [
     'facebook' => [
         'client_id' => '669471600192235',
         'client_secret' => '540d5fff84396bd7ee8ca471b3011bfa',
-        'redirect' => env('FB_REDIRECT', ''),
+        'redirect' => env('FB_REDIRECT', 'https://todoapp.site/callback/facebook'),
+    ],
+    'google' => [
+        'client_id' => env('GOOGLE_CLIENT_ID', '92699194994-pc4hvrt5kbrc0s4cgquiq2a5vvcfmbol.apps.googleusercontent.com'),
+        'client_secret' => env('GOOGLE_CLIENT_SECRET', '42BSD9W0T0aOCGlq-KNdN6BO'),
+        'redirect' => env('GOOGLE_REDIRECT', 'https://todoapp.site/callback/google')
     ],
 ];

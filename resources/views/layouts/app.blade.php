@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <script src="https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit" async defer>
-    </script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit" async defer></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140847010-1"></script>
     <script>
@@ -16,6 +16,7 @@
 
         gtag('config', 'UA-140847010-1');
     </script>
+    <meta name="google-signin-client_id" content="92699194994-pc4hvrt5kbrc0s4cgquiq2a5vvcfmbol.apps.googleusercontent.com">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSRF Token -->
@@ -231,16 +232,22 @@
 </script>
 <script>
     // Check that service workers are registered
-    if ('serviceWorker' in navigator) {
+    /*if ('serviceWorker' in navigator) {
         // Use the window load event to keep the page load performant
         window.addEventListener('load', () => {
             navigator.serviceWorker.register('/service-worker.js');
         });
+    }*/
+    function onSignIn(googleUser) {
+        var profile = googleUser.getBasicProfile();
+        console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+        console.log('Name: ' + profile.getName());
+        console.log('Image URL: ' + profile.getImageUrl());
+        console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
     }
 </script>
 
-<script src="https://www.google.com/recaptcha/api.js?render=explicit"
-        async defer>
-</script>
+
+
 </body>
 </html>
