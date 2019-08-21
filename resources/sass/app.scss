@@ -124,8 +124,8 @@
   width: 60px;
   height: 60px;
   border: calc(60px / 7) solid transparent;
-  border-right-color: #ff1d5e;
-  border-top-color: #ff1d5e;
+  border-right-color: $CSFSBlack;
+  border-top-color: $CSFSBlack;
   border-radius: 50%;
   box-sizing: border-box;
   animation: spring-spinner-animation 3s ease-in-out infinite;
@@ -225,7 +225,7 @@
   width: 672px;
   height: 100%;
   overflow: hidden;
-  background-color: black !important;
+  background-color: $CSFSBlack !important;
   -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
   animation-name: example;
@@ -233,7 +233,7 @@
 }
 
 .bg-black {
-  background-color: #1c1919 !important;
+  background-color: $CSFSBlack !important;
 }
 
 .spinnerContainer {
@@ -253,7 +253,7 @@
     width: 70%;
     height: 80%;
     left: 0;
-    background-color: black !important;
+    background-color: $CSFSBlack !important;
     transition: width 500ms ease-in-out 500ms;
   }
 }
@@ -274,16 +274,16 @@ top scroll desktop
 }
 
 .transparentNav.homePageClass > .container-fluid > #navbarSupportedContent > .MainMenu > li > a.nav-link-white {
-  color: #FFFFFF !important;
+  color: white !important;
   transition: color 500ms ease-in-out 100ms;
 }
 .transparentNav.notHomePageClass > .container-fluid > #navbarSupportedContent > .MainMenu > li > a.nav-link-white {
-  color: #000000 !important;
+  color: $CSFSBlack !important;
   transition: color 500ms ease-in-out 100ms;
 }
 
 .nav-link-white {
-  color: black !important;
+  color: $CSFSBlack !important;
   transition: color 500ms ease-in-out 100ms;
 }
 
@@ -298,11 +298,11 @@ top scroll mobile
 
 
   .transparentNav.notHomePageClass > .container-fluid > #navbarSupportedContent > .MainMenu > li > a.nav-link-right {
-    color: #000 !important;
+    color: $CSFSBlack !important;
     transition: color 500ms;
   }
   .transparentNav.homePageClass > .container-fluid > #navbarSupportedContent > .MainMenu > li > a.nav-link-right {
-    color: #fff !important;
+    color: white !important;
     transition: color 500ms;
   }
   .transparentNav > .container-fluid > .cfsc{

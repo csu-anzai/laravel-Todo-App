@@ -34,29 +34,30 @@
     <link href="{{ asset('css/animate.css') }}" rel="stylesheet">
 </head>
 <body class="bg-white">
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
 <script>
-    window.fbAsyncInit = function () {
+    window.fbAsyncInit = function() {
         FB.init({
-            appId: '669471600192235',
-            cookie: true,
-            xfbml: true,
-            version: 'v3.3'
+            xfbml            : true,
+            version          : 'v4.0'
         });
-
-        FB.AppEvents.logPageView();
-
     };
-    (function (d, s, id) {
+
+    (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {
-            return;
-        }
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-</script>
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+     attribution=setup_tool
+     page_id="2429679170609548"
+     theme_color="#6699cc">
+</div>
 <div id="app">
     <div v-if="!siteStart" class="w-100 vh-100 mx-auto my-auto  spinnerContainer">
         <transition
@@ -200,10 +201,10 @@
                     <div>
                         <p class="text-white   px-4 mb-0" v-html="'Copyright © '+ year +' — '+ brand">
                             <a target="_blank" rel="noopener" href="#" class="grey--text text--lighten-1">Privacy
-                                Policy</a>
+                                                                                                          Policy</a>
                             <span class="grey--text text--lighten-1">  &nbsp;|  &nbsp;</span>
                             <a target="_blank" rel="noopener" href="#" class="grey--text text--lighten-1">Cookie
-                                Policy</a>
+                                                                                                          Policy</a>
                     </div>
                     <div></div>
                     <div class=" socialIcons d-flex align-items-center bg-black ">
@@ -219,6 +220,15 @@
                 </div>
             </v-card>
         </v-footer>
+    </div>
+    <!-- Load Facebook SDK for JavaScript -->
+
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat"
+         attribution=setup_tool
+         page_id="2429679170609548"
+         theme_color="#1f1f1f">
     </div>
 
 </div>
@@ -245,7 +255,6 @@
         console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
     }
 </script>
-
 
 
 </body>

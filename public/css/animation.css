@@ -3,7 +3,7 @@
         background-color: white;
     }
     to {
-        background-color: black;
+        background-color: #1f1f1f;
     }
 }
 @-webkit-keyframes example {
@@ -11,6 +11,6 @@
         background-color: white;
     }
     to {
-        background-color: black;
+        background-color: #1f1f1f;
     }
 }
