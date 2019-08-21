@@ -45,9 +45,9 @@ return [
     ],
 
     'facebook' => [
-        'client_id' => '669471600192235',
-        'client_secret' => '540d5fff84396bd7ee8ca471b3011bfa',
-        'redirect' => env('FB_REDIRECT', 'https://todoapp.site/callback/facebook'),
+        'client_id' => env('FACEBOOK_CLIENT_ID'),
+        'client_secret' => env('FACEBOOK_CLIENT_SECRET'),
+        'redirect' => env('FB_REDIRECT'),
     ],
     'google' => [
         'client_id' => env('GOOGLE_CLIENT_ID'),
