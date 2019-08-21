@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Notifications\UserRegisteredSuccessfully;
+use App\Notifications\UserRegisteredSuccessfullyNoVerify;
 use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -11,7 +12,7 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Exception;
 use Illuminate\Validation\ValidationException;
-
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use App\Http\Requests\ReCaptchaFormRequest;
 
@@ -21,14 +22,12 @@ class RegisterController extends Controller
 
     /**
      * Where to redirect users after registration.
-     *
      * @var string
      */
     protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
-     *
      */
     public function __construct()
     {
@@ -37,7 +36,6 @@ class RegisterController extends Controller
 
     /**
      * Register new account.
-     *
      * @param Request $request
      * @return User
      */
@@ -53,25 +51,37 @@ class RegisterController extends Controller
             'provider' => ['string', 'max:255'],
             'provider_id' => ['string', 'max:255'],
             'avatar' => ['string', 'max:255'],
-            'uploadedNewImage'=> ['boolean'],
+            'uploadedNewImage' => ['boolean'],
 
         ]);
-        try {
-            $validatedData['password'] = bcrypt(array_get($validatedData, 'password'));
+        $validatedData['password'] = bcrypt(array_get($validatedData, 'password'));
+        if ($validatedData['provider_id'] !== "") {
+            $validatedData['status'] = 1;
+            $validatedData['activation_code'] = "";
+        } else {
+            $validatedData['status'] = 0;
             $validatedData['activation_code'] = str_random(30) . time();
-            $user = app(User::class)->create($validatedData);
-            if ($validatedData['uploadedNewImage']==1 ) {
+        }
+        DB::beginTransaction();
+        try {
 
+            $user = app(User::class)->create($validatedData);
+            if ($validatedData['uploadedNewImage'] == 1) {
                 File::move(public_path('avatar_temp') . '/' . $validatedData['avatar'], public_path('avatar') . '/' . $validatedData['avatar']);
             }
-
+            DB::commit();
         } catch (Exception $exception) {
+            DB::rollback();
             logger()->error($exception);
-
             return redirect()->back()->with('message', 'Unable to create new user.');
         }
-        $user->notify(new UserRegisteredSuccessfully($user));
-
+        if ($validatedData['provider_id'] !== "") {
+            $user->notify(new UserRegisteredSuccessfullyNoVerify($user));
+            auth()->login($user);
+            return redirect()->to('/');
+        }else{
+            $user->notify(new UserRegisteredSuccessfully($user));
+        }
         return redirect()->back()->with('message', 'Successfully created a new account. Please check your email and activate your account.');
 
     }
@@ -102,10 +112,8 @@ class RegisterController extends Controller
             }
         } catch (Exception $exception) {
             logger()->error($exception);
-
             return "Whoops! something went wrong.";
         }
-
         return redirect()->to('/');
     }
 
