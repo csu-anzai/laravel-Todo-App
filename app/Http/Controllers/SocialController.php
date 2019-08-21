@@ -31,7 +31,8 @@ class SocialController extends Controller
             /*return view('auth.register', ['name' => $getInfo->name, 'email' => $getInfo->email, 'provider' => $provider,
                 'provider_id' => $getInfo->id]);*/
         }
-        return $user;
+        auth()->login($user);
+        return redirect()->to('/');
 
         /* $user = $this->createUser($getInfo, $provider);
          auth()->login($user);
