@@ -56,6 +56,7 @@ let userAvatar = $('#userAvatar').val();
 new Vue({
     el: '#app',
     data: {
+        siteStart: false,
         currentRoute: window.location.pathname,
         drawer: false,
         year: new Date().getFullYear(),
@@ -67,7 +68,7 @@ new Vue({
         scrolledTop: true,
         transparentNav: 'transparentNav',
         loaded: false,
-        siteStart: false,
+
         homePageClass: "",
         uploadedNewImage: 0,
         user: {
