@@ -68,11 +68,10 @@
             <half-circle-spinner class=""
                                  :animation-duration="1500"
                                  :size="100"
-                                 color="#ff1d5e"
+                                 color="#000000"
             />
         </transition>
     </div>
-
     <div id="contents" v-if="siteStart">
         @if(Request::is('/'))
             <div class="container-background  ">

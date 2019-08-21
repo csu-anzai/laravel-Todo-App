@@ -98,7 +98,6 @@ new Vue({
             setTimeout(() => {
                 this.loadIt()
             }, 500);
-
         },
         startSite() {
             setTimeout(() => {
