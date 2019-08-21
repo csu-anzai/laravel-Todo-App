@@ -97,7 +97,7 @@ new Vue({
         loadSite() {
             setTimeout(() => {
                 this.loadIt()
-            }, 1500);
+            }, 500);
 
         },
         startSite() {
