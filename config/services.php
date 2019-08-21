@@ -50,8 +50,8 @@ return [
         'redirect' => env('FB_REDIRECT', 'https://todoapp.site/callback/facebook'),
     ],
     'google' => [
-        'client_id' => env('GOOGLE_CLIENT_ID', '92699194994-pc4hvrt5kbrc0s4cgquiq2a5vvcfmbol.apps.googleusercontent.com'),
-        'client_secret' => env('GOOGLE_CLIENT_SECRET', '42BSD9W0T0aOCGlq-KNdN6BO'),
-        'redirect' => env('GOOGLE_REDIRECT', 'https://todoapp.site/callback/google')
+        'client_id' => env('GOOGLE_CLIENT_ID'),
+        'client_secret' => env('GOOGLE_CLIENT_SECRET'),
+        'redirect' => env('GOOGLE_REDIRECT')
     ],
 ];
