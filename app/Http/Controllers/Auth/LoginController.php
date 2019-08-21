@@ -51,13 +51,13 @@ class LoginController extends Controller
                     $this->username() => [trans('auth.verified')],
                 ]);
             }
-            elseif (Auth::user()->allowed == 0) {
+           /* elseif (Auth::user()->allowed == 0) {
                 $this->guard()->logout();
                 $request->session()->invalidate();
                 throw ValidationException::withMessages([
                     $this->username() => [trans('auth.allowed')],
                 ]);
-            }
+            }*/
 
         }
     }
