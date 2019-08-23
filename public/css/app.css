@@ -16501,6 +16501,10 @@ a.text-dark:focus {
   }
 }
 
+body {
+  font-family: "ETCTrispace" !important;
+}
+
 .nav-icon {
   margin: 0 5px;
 }
@@ -16615,8 +16619,8 @@ a.text-dark:focus {
   width: 60px;
   height: 60px;
   border: calc(60px / 7) solid transparent;
-  border-right-color: #1f1f1f;
-  border-top-color: #1f1f1f;
+  border-right-color: #0f0b07;
+  border-top-color: #0f0b07;
   border-radius: 50%;
   box-sizing: border-box;
   -webkit-animation: spring-spinner-animation 3s ease-in-out infinite;
@@ -16746,7 +16750,7 @@ a.text-dark:focus {
   width: 672px;
   height: 100%;
   overflow: hidden;
-  background-color: #1f1f1f !important;
+  background-color: #0f0b07 !important;
   -webkit-animation-name: example;
   /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 3s;
@@ -16756,7 +16760,7 @@ a.text-dark:focus {
 }
 
 .bg-black {
-  background-color: #1f1f1f !important;
+  background-color: #0f0b07 !important;
 }
 
 .spinnerContainer {
@@ -16779,7 +16783,7 @@ a.text-dark:focus {
     width: 70%;
     height: 80%;
     left: 0;
-    background-color: #1f1f1f !important;
+    background-color: #0f0b07 !important;
     transition: width 500ms ease-in-out 500ms;
   }
 }
@@ -16806,12 +16810,12 @@ top scroll desktop
 }
 
 .transparentNav.notHomePageClass > .container-fluid > #navbarSupportedContent > .MainMenu > li > a.nav-link-white {
-  color: #1f1f1f !important;
+  color: #0f0b07 !important;
   transition: color 500ms ease-in-out 100ms;
 }
 
 .nav-link-white {
-  color: #1f1f1f !important;
+  color: #0f0b07 !important;
   transition: color 500ms ease-in-out 100ms;
 }
 
@@ -16825,7 +16829,7 @@ top scroll mobile
 
 @media (max-width: 1200px) {
   .transparentNav.notHomePageClass > .container-fluid > #navbarSupportedContent > .MainMenu > li > a.nav-link-right {
-    color: #1f1f1f !important;
+    color: #0f0b07 !important;
     transition: color 500ms;
   }
 

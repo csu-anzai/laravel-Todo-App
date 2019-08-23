@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="col-md-12 px-0">
+    <div class="col-md-12 px-0" style="z-index: 4">
 
         <example-component ></example-component>
         <vue-headful

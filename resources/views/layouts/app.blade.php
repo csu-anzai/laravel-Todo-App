@@ -30,6 +30,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/fonts.css') }}" rel="stylesheet">
     <link href="{{ asset('css/animation.css') }}" rel="stylesheet">
     <link href="{{ asset('css/animate.css') }}" rel="stylesheet">
 </head>
@@ -222,14 +223,6 @@
         </v-footer>
     </div>
     <!-- Load Facebook SDK for JavaScript -->
-
-
-    <!-- Your customer chat code -->
-    <div class="fb-customerchat"
-         attribution=setup_tool
-         page_id="2429679170609548"
-         theme_color="#1f1f1f">
-    </div>
 
 </div>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
