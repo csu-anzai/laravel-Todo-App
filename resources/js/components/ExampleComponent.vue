@@ -1,10 +1,15 @@
 <template>
 
         <div class="fullsize-video-bg">
-            <div class="inner">
+            <div class="inner pt-jumbo" >
 
-
+                <div class="jumbotron bg-transparent" >
+                    <h1 class="display-responsive-jumbo">Let's fortify your business with an APP</h1>
                     <p class="lead">FULL-STACK DEVELOPER</p>
+
+                    <a class="btn btn-dark btn-lg" href="#" role="button">Learn more</a>
+                </div>
+
 
             </div>
             <div id="video-viewport">

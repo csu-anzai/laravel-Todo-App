@@ -275,6 +275,13 @@ icons
 #naviCFSC{
   width: 100% !important;
 }
+.display-responsive-jumbo {
+  font-size: 112px !important;
+  font-weight: 300;
+  line-height: 1 !important;
+  letter-spacing: -0.04em !important;
+  font-family: 'Roboto', sans-serif !important;
+}
 /*
 top scroll desktop
 */
@@ -335,7 +342,7 @@ down scroll desktop
 /*
 top scroll mobile
 */
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .MainMenu{
     display: flex !important;
     flex-direction: column !important;
@@ -374,7 +381,7 @@ top scroll mobile
 /*
 down scroll mobile
 */
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .MainMenu{
     display: flex !important;
     flex-direction: column !important;
@@ -417,7 +424,107 @@ down scroll mobile
     padding: 0 20px !important;
   }
 }
-/*Video headere*/
+
+@media (max-width: 1070px){
+  .display-responsive-jumbo {
+    font-size: 100px !important;
+    font-weight: 300;
+    line-height: 1 !important;
+    letter-spacing: -0.04em !important;
+    font-family: 'Roboto', sans-serif !important;
+  }
+  .pt-jumbo {
+    padding-top: 48px !important;
+  }
+}
+@media (max-width: 970px){
+  .display-responsive-jumbo {
+    font-size: 90px !important;
+    font-weight: 300;
+    line-height: 1 !important;
+    letter-spacing: -0.04em !important;
+    font-family: 'Roboto', sans-serif !important;
+  }
+  .pt-jumbo {
+    padding-top: 40px !important;
+  }
+}
+@media (max-width: 870px){
+  .display-responsive-jumbo {
+    font-size: 80px !important;
+    font-weight: 300;
+    line-height: 1 !important;
+    letter-spacing: -0.04em !important;
+    font-family: 'Roboto', sans-serif !important;
+  }
+  .pt-jumbo {
+    padding-top: 32px !important;
+  }
+}
+@media (max-width: 770px){
+  .display-responsive-jumbo {
+    font-size: 68px !important;
+    font-weight: 300;
+    line-height: 1 !important;
+    letter-spacing: -0.04em !important;
+    font-family: 'Roboto', sans-serif !important;
+  }
+  .pt-jumbo {
+    padding-top: 24px !important;
+  }
+  .jumbotron {
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+    background-color: #e9ecef;
+    border-radius: 0.3rem;
+  }
+}
+@media (max-width: 670px){
+  .display-responsive-jumbo {
+    font-size: 58px !important;
+    font-weight: 300;
+    line-height: 1 !important;
+    letter-spacing: -0.04em !important;
+    font-family: 'Roboto', sans-serif !important;
+  }
+  .pt-jumbo {
+    padding-top: 16px !important;
+  }
+  .jumbotron {
+    padding: .5rem !important;
+  }
+}
+@media (max-width: 570px){
+  .display-responsive-jumbo {
+    font-size: 30px !important;
+    font-weight: 300;
+    line-height: 1 !important;
+    letter-spacing: -0.04em !important;
+    font-family: 'Roboto', sans-serif !important;
+  }
+  .pt-jumbo {
+    padding-top: 12px !important;
+  }
+  .jumbotron {
+    padding: .25rem !important;
+  }
+}
+@media (max-width: 470px){
+  .display-responsive-jumbo {
+    font-size: 20px !important;
+    font-weight: 300;
+    line-height: 1 !important;
+    letter-spacing: -0.04em !important;
+    font-family: 'Roboto', sans-serif !important;
+  }
+  .pt-jumbo {
+    padding-top: 12px !important;
+  }
+  .jumbotron {
+    padding: .25rem !important;
+  }
+}
+  /*Video headere*/
 video {
   display: block;
   width: 100%;
@@ -453,7 +560,7 @@ margin-top: -70px;
 .fullsize-video-bg .inner {
   display: flex;
 
-
+top:70px;
   position: absolute;
   color: white;
   z-index: 99;
