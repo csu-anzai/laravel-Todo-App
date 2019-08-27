@@ -38,17 +38,18 @@
 <!-- Load Facebook SDK for JavaScript -->
 <div id="fb-root"></div>
 <script>
-    window.fbAsyncInit = function() {
+    window.fbAsyncInit = function () {
         FB.init({
-            xfbml            : true,
-            version          : 'v4.0'
+            xfbml: true,
+            version: 'v4.0'
         });
     };
 
-    (function(d, s, id) {
+    (function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
+        js = d.createElement(s);
+        js.id = id;
         js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
@@ -76,12 +77,19 @@
     </div>
     <div id="contents" v-if="siteStart">
         @if(Request::is('/'))
-            <div class="container-background  ">
-                <div class="background"></div>
-            </div>
+            {{--  <div class="container-background  ">
+                  <div class="background">
+                      <div class="container my-5 py-5">
+                          <div class="container my-5 py-5">
+                              <h2 class="text-white">I develop engaging personal, business and ecommerce websites that meet your specifications however simple or complex</h2>
+
+                          </div>
+                      </div>
+                  </div>
+              </div>--}}
         @endif
 
-        <nav :class="'navbar navbar-expand-xl shadow-sm navbar-light bg-white sticky-top '+transparentNav+' '+homePageClass">
+        <nav id="naviCFSC" :class="'navbar navbar-expand-xl shadow-sm   sticky-top '+transparentNav+' '+homePageClass">
             <div class="container-fluid ">
                 <div class="cfsc pl-2  mr-lg-5">
                     <a class="navbar-brand" href="{{ url('/') }}">
@@ -99,7 +107,12 @@
                         data-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false"
                         aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
+                    @if(Request::is('/'))
+                        <span class="navbar-dark navbar-toggler-icon"></span>
+                    @else
+                        <span class="navbar-light navbar-toggler-icon"></span>
+                    @endif
+
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <transition
@@ -108,11 +121,8 @@
                             leave-active-class="animated bounceOutRight"
                     >
                         <ul v-if="loaded" class="navbar-nav  mr-auto MainMenu py-1 ">
-
+                            <li class="nav-item"><a href="#" class="nav-link nav-link-white">Services</a></li>
                             <li class="nav-item"><a href="#" class="nav-link nav-link-white">Portfolio</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link nav-link-white">Packages</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link nav-link-white">Promos</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link nav-link-white">Demos</a></li>
                             <li class="nav-item"><a href="#" class="nav-link nav-link-white">About</a></li>
                             <li class="nav-item"><a href="#" class="nav-link nav-link-white">Contact</a></li>
                         </ul>
@@ -164,43 +174,39 @@
             </div>
         </nav>
 
-        <main class="py-4 mb-4">
+        <main class="">
             @yield('content')
         </main>
+
+
         <v-footer height="auto">
-            <v-card flat tile width="100%" class="bg-black text-center">
+            <v-card flat tile width="100%" class=" text-center">
                 <v-card-text>
-                    <v-btn dark class="mx-4" icon>
+                    <v-btn class="mx-4" icon>
                         <v-icon dark size="24px">home</v-icon>
                     </v-btn>
-                    <v-btn dark class="mx-4" icon>
+                    <v-btn class="mx-4" icon>
                         <v-icon dark size="24px">mail</v-icon>
                     </v-btn>
-                    <v-btn dark
-
-                           class="mx-4"
-                           icon
-                    >
+                    <v-btn class="mx-4" icon>
                         <v-icon dark size="24px">message</v-icon>
                     </v-btn>
                 </v-card-text>
-                <v-card-text class="white--text pt-0">
-                    Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum.
-                    Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur
-                    dignissim a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada.
-                    Nulla
-                    placerat augue vel ipsum ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel diam
-                    elementum tempor vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes,
-                    nascetur
-                    ridiculus mus.
-                </v-card-text>
-                <v-divider dark></v-divider>
+                {{-- <v-card-text class=" pt-0">
+                     Morbi vehicula lacinia malesuada.
+                     Nulla
+                     placerat augue vel ipsum ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel diam
+                     elementum tempor vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes,
+                     nascetur
+                     ridiculus mus.
+                 </v-card-text>--}}
+                <v-divider></v-divider>
 
                 <div id="" class="b-flex align-items-center justify-content-between  ">
 
 
                     <div>
-                        <p class="text-white   px-4 mb-0" v-html="'Copyright © '+ year +' — '+ brand">
+                        <p class="   px-4 mb-0" v-html="'Copyright © '+ year +' — '+ brand">
                             <a target="_blank" rel="noopener" href="#" class="grey--text text--lighten-1">Privacy
                                                                                                           Policy</a>
                             <span class="grey--text text--lighten-1">  &nbsp;|  &nbsp;</span>
@@ -208,13 +214,12 @@
                                                                                                           Policy</a>
                     </div>
                     <div></div>
-                    <div class=" socialIcons d-flex align-items-center bg-black ">
-                        <a href="#" class="icon-button instagram"><i class="fab fa-instagram"></i><span></span></a>
-                        <a href="#" class="icon-button twitter"><i class="fab fa-twitter"></i><span></span></a>
-                        <a href="#" class="icon-button facebook"><i class="fab fa-facebook"></i><span></span></a>
-                        <a href="#" class="icon-button google-plus"><i class="fab fa-google"></i><span></span></a>
-                        <a href="#" class="icon-button youtube"><i class="fab fa-youtube"></i><span></span></a>
-                        <a href="#" class="icon-button pinterest"><i class="fab fa-pinterest"></i><span></span></a>
+                    <div class=" socialIcons d-flex align-items-center  ">
+
+                        <a target="_blank" href="https://www.facebook.com/cfscastillo" class="icon-button facebook"><i class="fab fa-facebook"></i><span></span></a>
+                        <a target="_blank" href="https://github.com/cfscastillo04" class="icon-button github"><i class="fab fa-github"></i><span></span></a>
+                        <a target="_blank" href="https://www.instagram.com/cfs.castillo/" class="icon-button instagram"><i class="fab fa-instagram"></i><span></span></a>
+                        <a target="_blank" href="https://twitter.com/CF_S_Castillo" class="icon-button twitter"><i class="fab fa-twitter"></i><span></span></a>
 
 
                     </div>

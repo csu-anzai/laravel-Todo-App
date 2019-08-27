@@ -8,9 +8,14 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-body{
+body {
   font-family: 'ETCTrispace' !important;
 }
+
+/*
+icons
+*/
+
 .nav-icon {
   margin: 0 5px;
 
@@ -62,7 +67,7 @@ body{
 /* Icons */
 .icon-button i {
   background: none;
-  color: white !important;
+  color: $CFSCBlack !important;
   height: 2.6rem;
   left: 0;
   line-height: 2.6rem;
@@ -78,6 +83,10 @@ body{
 
 .twitter span {
   background-color: #4099ff;
+}
+
+.github span {
+  background-color: #fafafa;
 }
 
 .facebook span {
@@ -119,7 +128,7 @@ body{
   width: 60px;
 }
 
-.spring-spinner  .spring-spinner-part.bottom {
+.spring-spinner .spring-spinner-part.bottom {
   transform: rotate(180deg) scale(-1, 1);
 }
 
@@ -127,8 +136,8 @@ body{
   width: 60px;
   height: 60px;
   border: calc(60px / 7) solid transparent;
-  border-right-color: $CSFSBlack;
-  border-top-color: $CSFSBlack;
+  border-right-color: $CFSCBlack;
+  border-top-color: $CFSCBlack;
   border-radius: 50%;
   box-sizing: border-box;
   animation: spring-spinner-animation 3s ease-in-out infinite;
@@ -153,6 +162,7 @@ body{
     border-width: calc(60px / 7);
   }
 }
+
 /*.icon-button .icon-twitter {
 	color: #4099ff;
 }
@@ -174,8 +184,7 @@ body{
 .icon-button .fa-pinterest {
 	color: #cb2027;
 }*/
-
-
+.icon-button:hover .github,
 .icon-button:hover .icon-twitter,
 .icon-button:hover .icon-facebook,
 .icon-button:hover .icon-google-plus,
@@ -183,7 +192,7 @@ body{
 .icon-button:hover .fa-instagram,
 .icon-button:hover .fa-youtube,
 .icon-button:hover .fa-pinterest {
-  color: white;
+  color: white !important;
 }
 
 @media all and (max-width: 680px) {
@@ -215,9 +224,12 @@ body{
 
 }
 
-.b-flex {
-  display: -ms-flexbox !important;
-  display: flex !important;
+/*loader*/
+.spinnerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999999 !important;
 }
 
 .container-background {
@@ -228,26 +240,11 @@ body{
   width: 672px;
   height: 100%;
   overflow: hidden;
-  background-color: $CSFSBlack !important;
+  background-color: $CFSCBlack !important;
   -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
   animation-name: example;
   animation-duration: 3s;
-}
-
-.bg-black {
-  background-color: $CSFSBlack !important;
-}
-
-.spinnerContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index:999999999 !important;
-}
-
-.MainMenu, .cfsc, .nav-item, .socialIcons {
-  z-index: 2;
 }
 
 @media screen and (max-width: 1200px) {
@@ -256,11 +253,28 @@ body{
     width: 70%;
     height: 80%;
     left: 0;
-    background-color: $CSFSBlack !important;
+    background-color: $CFSCBlack !important;
     transition: width 500ms ease-in-out 500ms;
   }
 }
 
+.b-flex {
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.bg-black {
+  background-color: $CFSCBlack !important;
+}
+
+.MainMenu, .cfsc, .nav-item, .socialIcons {
+  z-index: 2;
+}
+
+
+#naviCFSC{
+  width: 100% !important;
+}
 /*
 top scroll desktop
 */
@@ -270,58 +284,200 @@ top scroll desktop
   box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
   transition: box-shadow 1s ease-in-out 300ms;
 }
-.transparentNav.notHomePageClass{
-  background-color: white !important;
-  box-shadow:0 .125rem .25rem rgba(0,0,0,.075)!important;
-  transition: box-shadow 1s ease-in-out 300ms;
-}
 
-.transparentNav.homePageClass > .container-fluid > #navbarSupportedContent > .MainMenu > li > a.nav-link-white {
+.transparentNav.homePageClass > .container-fluid > #navbarSupportedContent > .MainMenu > li > a.nav-link-white,
+.transparentNav.homePageClass > .container-fluid > #navbarSupportedContent > .MainMenu > li > a.nav-link-right {
   color: white !important;
   transition: color 500ms ease-in-out 100ms;
 }
-.transparentNav.notHomePageClass > .container-fluid > #navbarSupportedContent > .MainMenu > li > a.nav-link-white {
-  color: $CSFSBlack !important;
+
+.transparentNav.notHomePageClass {
+  background-color: white !important;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+  transition: box-shadow 1s ease-in-out 300ms;
+}
+
+.transparentNav.notHomePageClass > .container-fluid > #navbarSupportedContent > .MainMenu > li > a.nav-link-white,
+.transparentNav.notHomePageClass > .container-fluid > #navbarSupportedContent > .MainMenu > li > a.nav-link-right {
+  color: $CFSCBlack !important;
   transition: color 500ms ease-in-out 100ms;
 }
 
-.nav-link-white {
-  color: $CSFSBlack !important;
-  transition: color 500ms ease-in-out 100ms;
-}
 
 /*
 down scroll desktop
 */
+.homePageClass {
+  background-color: transparent !important;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
+  transition: box-shadow 1s ease-in-out 300ms;
+}
+
+.homePageClass > .container-fluid > #navbarSupportedContent > .MainMenu > li > a.nav-link-white,
+.homePageClass > .container-fluid > #navbarSupportedContent > .MainMenu > li > a.nav-link-right {
+  color: white !important;
+  transition: color 500ms ease-in-out 100ms;
+}
+
+.notHomePageClass {
+  background-color: white !important;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+  transition: box-shadow 1s ease-in-out 300ms;
+}
+
+.notHomePageClass > .container-fluid > #navbarSupportedContent > .MainMenu > li > a.nav-link-white,
+.notHomePageClass > .container-fluid > #navbarSupportedContent > .MainMenu > li > a.nav-link-right {
+  color: $CFSCBlack !important;
+  transition: color 500ms ease-in-out 100ms;
+}
+
 
 /*
 top scroll mobile
 */
 @media (max-width: 1200px) {
-
-
-  .transparentNav.notHomePageClass > .container-fluid > #navbarSupportedContent > .MainMenu > li > a.nav-link-right {
-    color: $CSFSBlack !important;
-    transition: color 500ms;
+  .MainMenu{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end;
   }
+  .transparentNav.homePageClass {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent !important;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
+    transition: box-shadow 1s ease-in-out 300ms;
+  }
+  .transparentNav.homePageClass > .container-fluid > #navbarSupportedContent > .MainMenu > li > a.nav-link-white,
   .transparentNav.homePageClass > .container-fluid > #navbarSupportedContent > .MainMenu > li > a.nav-link-right {
     color: white !important;
+    transition: color 500ms ease-in-out 100ms;
+  }
+
+  .transparentNav.notHomePageClass {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white !important;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
+    transition: box-shadow 1s ease-in-out 300ms;
+  }
+  .transparentNav.notHomePageClass > .container-fluid > #navbarSupportedContent > .MainMenu > li > a.nav-link-right,
+  .transparentNav.notHomePageClass > .container-fluid > #navbarSupportedContent > .MainMenu > li > a.nav-link-white {
+    color: $CFSCBlack !important;
     transition: color 500ms;
   }
-  .transparentNav > .container-fluid > .cfsc{
-    background-color: white;
-    border-radius: 30px;
-    transition: background-color 300ms,border-radius 200ms;
-  }
+
 }
 
 /*
 down scroll mobile
 */
+@media (max-width: 1200px) {
+  .MainMenu{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end;
+  }
+  .homePageClass {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent !important;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
+    transition: box-shadow 1s ease-in-out 300ms;
+  }
+  .homePageClass > .container-fluid > #navbarSupportedContent > .MainMenu > li > a.nav-link-right,
+  .homePageClass > .container-fluid > #navbarSupportedContent > .MainMenu > li > a.nav-link-white {
+    color: white !important;
+    transition: color 500ms;
+  }
+
+  .notHomePageClass {
+    background-color: white !important;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
+    transition: box-shadow 1s ease-in-out 300ms;
+  }
+  .notHomePageClass > .container-fluid > #navbarSupportedContent > .MainMenu > li > a.nav-link-right,
+  .notHomePageClass > .container-fluid > #navbarSupportedContent > .MainMenu > li > a.nav-link-white {
+    color: $CFSCBlack !important;
+    transition: color 500ms;
+  }
 
 
+}
+@media (max-width: 700px){
+  .MainMenu{
+    display: flex !important;
+    flex-direction: row !important;
+
+  }
+  .MainMenu .nav-item{
+    padding: 0 20px !important;
+  }
+}
+/*Video headere*/
+video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#video-viewport {
+  /* position: absolute;
+   top: 0;
+   left: 0;*/
+  width: 100%;
+  height: auto !important;
+  overflow: hidden;
+}
+
+.fullsize-video-bg {
+margin-top: -70px;
+  overflow: hidden;
+}
+
+.fullsize-video-bg:after {
+  content: "";
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgTWFjaW50b3NoIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjI4RkZBQTgzNzg1NzExRTU4NTQyODc3OUM4MTZGMUREIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjI4RkZBQTg0Nzg1NzExRTU4NTQyODc3OUM4MTZGMUREIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MjhGRkFBODE3ODU3MTFFNTg1NDI4Nzc5QzgxNkYxREQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MjhGRkFBODI3ODU3MTFFNTg1NDI4Nzc5QzgxNkYxREQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz66uHInAAAAIUlEQVR42mL5//8/AyMj42YGIGBigABfEMEIkoEBgAADAKvuBwVS8BAjAAAAAElFTkSuQmCC);
+  background-size: 3px 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.fullsize-video-bg .inner {
+  display: flex;
 
 
+  position: absolute;
+  color: white;
+  z-index: 99;
+  width: 100%;
+  /* margin-top: 500px; */
+  justify-content: center;
+  align-items: center;
+  /*display: table;
+  width: 100%;
+  max-width: 24em;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, .5);*/
+}
 
+
+.navbar-dark {
+   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+ }
+.navbar-light  {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
 
 
