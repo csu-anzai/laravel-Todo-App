@@ -98,8 +98,14 @@
                                 enter-active-class="animated flipInX"
                                 leave-active-class="animated bounceOutRight"
                         >
-                            <img v-if="loaded" src="images/cfsclogo5.svg" height="40" class="d-inline-block align-top"
-                                 alt="">
+                            @if(Request::is('/'))
+                                <img v-if="loaded" src="images/cfsclogo5white.svg" height="40" class="d-inline-block align-top"
+                                     alt="">
+                                @else
+                                <img v-if="loaded" src="images/cfsclogo5.svg" height="40" class="d-inline-block align-top"
+                                     alt="">
+                            @endif
+
                         </transition>
                     </a>
                 </div>
@@ -123,7 +129,6 @@
                         <ul v-if="loaded" class="navbar-nav  mr-auto MainMenu py-1 ">
                             <li class="nav-item"><a href="#" class="nav-link nav-link-white">Services</a></li>
                             <li class="nav-item"><a href="#" class="nav-link nav-link-white">Portfolio</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link nav-link-white">About</a></li>
                             <li class="nav-item"><a href="#" class="nav-link nav-link-white">Contact</a></li>
                         </ul>
                     </transition>

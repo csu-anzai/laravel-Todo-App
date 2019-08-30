@@ -2,12 +2,11 @@
 
         <div class="fullsize-video-bg">
             <div class="inner pt-jumbo" >
-
                 <div class="jumbotron bg-transparent" >
                     <h1 class="display-responsive-jumbo">Let's fortify your business with an APP</h1>
-                    <p class="lead">FULL-STACK DEVELOPER</p>
+                    <p class="leadCustom mb-xs-0 mb-sm-1 mb-md-2" >FULL-STACK DEVELOPER</p>
 
-                    <a class="btn btn-dark btn-lg" href="#" role="button">Learn more</a>
+                    <a class="btn btn-dark btn-lg btn-size" href="#" role="button">Learn more</a>
                 </div>
 
 

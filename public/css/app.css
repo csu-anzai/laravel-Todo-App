@@ -16908,7 +16908,7 @@ down scroll desktop
 */
 
 .homePageClass {
-  background-color: transparent !important;
+  background-color: black !important;
   box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
   transition: box-shadow 1s ease-in-out 300ms;
 }
@@ -16957,6 +16957,10 @@ top scroll mobile
     transition: color 500ms ease-in-out 100ms;
   }
 
+  .transparentNav.homePageClass > .container-fluid > #navbarSupportedContent > .MainMenu > li.nav-item {
+    background-color: black;
+  }
+
   .transparentNav.notHomePageClass {
     position: absolute;
     top: 0;
@@ -16999,6 +17003,10 @@ down scroll mobile
     transition: color 500ms;
   }
 
+  .homePageClass > .container-fluid > #navbarSupportedContent > .MainMenu > li.nav-item {
+    background-color: black;
+  }
+
   .notHomePageClass {
     background-color: white !important;
     box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
@@ -17013,7 +17021,7 @@ down scroll mobile
 }
 
 @media (max-width: 700px) {
-  .MainMenu {
+  .MainMenus {
     display: flex !important;
     flex-direction: row !important;
   }
@@ -17023,21 +17031,34 @@ down scroll mobile
   }
 }
 
-@media (max-width: 1070px) {
-  .display-responsive-jumbo {
-    font-size: 100px !important;
-    font-weight: 300;
-    line-height: 1 !important;
-    letter-spacing: -0.04em !important;
-    font-family: "Roboto", sans-serif !important;
-  }
-
-  .pt-jumbo {
-    padding-top: 48px !important;
-  }
+.leadCustom {
+  font-weight: 300;
+  display: block;
+  font-size: 1.4rem;
 }
 
-@media (max-width: 970px) {
+.pt-jumbo {
+  padding-top: 100px !important;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.display-responsive-jumbo {
+  font-size: 100px !important;
+  font-weight: 300;
+  line-height: 1 !important;
+  letter-spacing: -0.04em !important;
+  font-family: "Roboto", sans-serif !important;
+}
+
+.btn-size {
+  padding: 0.6rem 1.1rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+}
+
+@media (max-width: 1070px) {
   .display-responsive-jumbo {
     font-size: 90px !important;
     font-weight: 300;
@@ -17046,8 +17067,48 @@ down scroll mobile
     font-family: "Roboto", sans-serif !important;
   }
 
+  .leadCustom {
+    font-size: 1.3rem;
+  }
+
   .pt-jumbo {
-    padding-top: 40px !important;
+    padding-top: 90px !important;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .btn-size {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+  }
+}
+
+@media (max-width: 970px) {
+  .display-responsive-jumbo {
+    font-size: 80px !important;
+    font-weight: 300;
+    line-height: 1 !important;
+    letter-spacing: -0.04em !important;
+    font-family: "Roboto", sans-serif !important;
+  }
+
+  .leadCustom {
+    font-size: 1.25rem;
+  }
+
+  .pt-jumbo {
+    padding-top: 54px !important;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .btn-size {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
   }
 }
 
@@ -17060,8 +17121,21 @@ down scroll mobile
     font-family: "Roboto", sans-serif !important;
   }
 
+  .leadCustom {
+    font-size: 1.2rem;
+  }
+
   .pt-jumbo {
-    padding-top: 32px !important;
+    padding-top: 50px !important;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .btn-size {
+    padding: 0.4rem 0.6rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
   }
 }
 
@@ -17074,8 +17148,14 @@ down scroll mobile
     font-family: "Roboto", sans-serif !important;
   }
 
+  .leadCustom {
+    font-size: 1.1rem;
+  }
+
   .pt-jumbo {
-    padding-top: 24px !important;
+    padding-top: 48px !important;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .jumbotron {
@@ -17084,23 +17164,48 @@ down scroll mobile
     background-color: #e9ecef;
     border-radius: 0.3rem;
   }
+
+  .btn-size {
+    padding: 0.35rem 0.55rem;
+    font-size: 0.9rem;
+    line-height: 1.25;
+    border-radius: 0.2rem;
+  }
 }
 
 @media (max-width: 670px) {
   .display-responsive-jumbo {
-    font-size: 58px !important;
+    font-size: 50px !important;
     font-weight: 300;
     line-height: 1 !important;
     letter-spacing: -0.04em !important;
     font-family: "Roboto", sans-serif !important;
   }
 
+  .leadCustom {
+    font-size: 1rem;
+  }
+
   .pt-jumbo {
-    padding-top: 16px !important;
+    padding-top: 70px !important;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .jumbotron {
     padding: 0.5rem !important;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 0 !important;
+  }
+
+  .btn-size {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.8rem;
+    line-height: 1;
+    border-radius: 0.2rem;
   }
 }
 
@@ -17113,12 +17218,25 @@ down scroll mobile
     font-family: "Roboto", sans-serif !important;
   }
 
+  .leadCustom {
+    font-size: 0.9rem;
+  }
+
   .pt-jumbo {
-    padding-top: 12px !important;
+    padding-top: 70px !important;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .jumbotron {
     padding: 0.25rem !important;
+  }
+
+  .btn-size {
+    padding: 0.25rem 0.45rem;
+    font-size: 0.75rem;
+    line-height: 1;
+    border-radius: 0.2rem;
   }
 }
 
@@ -17131,12 +17249,26 @@ down scroll mobile
     font-family: "Roboto", sans-serif !important;
   }
 
+  .leadCustom {
+    font-size: 0.8rem;
+    display: inline !important;
+  }
+
   .pt-jumbo {
-    padding-top: 12px !important;
+    padding-top: 50px !important;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .jumbotron {
     padding: 0.25rem !important;
+  }
+
+  .btn-size {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.7rem;
+    line-height: 1;
+    border-radius: 0.2rem;
   }
 }
 
