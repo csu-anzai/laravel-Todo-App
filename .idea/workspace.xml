@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c65da59-e47e-417a-8eda-a372494c8e05" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/vids/towerink2.webm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vids/towerink2_2.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +28,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
+            <state relative-caret-position="4968">
               <caret line="207" column="24" selection-start-line="207" selection-start-column="24" selection-end-line="207" selection-end-column="24" />
             </state>
           </provider>
@@ -32,16 +36,14 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2232" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/js/components/ExampleComponent.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="15" column="53" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="53" />
+            <state relative-caret-position="360">
+              <caret line="15" column="71" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -49,7 +51,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
+            <state relative-caret-position="4584">
               <caret line="507" selection-start-line="507" selection-end-line="507" />
               <folding>
                 <element signature="e#235#279#0" />
@@ -123,59 +125,6 @@
                 <element signature="e#9495#9644#0" />
                 <element signature="e#9510#9582#0" />
                 <element signature="e#9605#9642#0" />
-                <element signature="e#9658#9720#0" />
-                <element signature="e#9731#9812#0" />
-                <element signature="e#9839#10008#0" />
-                <element signature="e#10019#10114#0" />
-                <element signature="e#10142#10612#0" />
-                <element signature="e#10172#10352#0" />
-                <element signature="e#10367#10395#0" />
-                <element signature="e#10408#10496#0" />
-                <element signature="e#10509#10610#0" />
-                <element signature="e#10640#11111#0" />
-                <element signature="e#10670#10850#0" />
-                <element signature="e#10865#10894#0" />
-                <element signature="e#10907#10995#0" />
-                <element signature="e#11008#11109#0" />
-                <element signature="e#11139#11611#0" />
-                <element signature="e#11169#11349#0" />
-                <element signature="e#11364#11392#0" />
-                <element signature="e#11405#11493#0" />
-                <element signature="e#11506#11609#0" />
-                <element signature="e#11639#12242#0" />
-                <element signature="e#11669#11849#0" />
-                <element signature="e#11864#11892#0" />
-                <element signature="e#11905#11993#0" />
-                <element signature="e#12007#12119#0" />
-                <element signature="e#12132#12240#0" />
-                <element signature="e#12270#12855#0" />
-                <element signature="e#12300#12480#0" />
-                <element signature="e#12495#12521#0" />
-                <element signature="e#12534#12622#0" />
-                <element signature="e#12636#12672#0" />
-                <element signature="e#12685#12737#0" />
-                <element signature="e#12750#12853#0" />
-                <element signature="e#12882#13407#0" />
-                <element signature="e#12912#13092#0" />
-                <element signature="e#13107#13134#0" />
-                <element signature="e#13147#13235#0" />
-                <element signature="e#13249#13286#0" />
-                <element signature="e#13299#13405#0" />
-                <element signature="e#13435#13982#0" />
-                <element signature="e#13465#13645#0" />
-                <element signature="e#13660#13719#0" />
-                <element signature="e#13732#13813#0" />
-                <element signature="e#13827#13864#0" />
-                <element signature="e#13877#13980#0" />
-                <element signature="e#14008#14060#0" />
-                <element signature="e#14078#14193#0" />
-                <element signature="e#14082#14129#0" />
-                <element signature="e#14214#14258#0" />
-                <element signature="e#14285#15728#0" />
-                <element signature="e#15756#16119#0" />
-                <element signature="e#15936#16117#0" />
-                <element signature="e#16135#16405#0" />
-                <element signature="e#16421#16687#0" />
               </folding>
             </state>
           </provider>
@@ -297,8 +246,8 @@
         <option value="$PROJECT_DIR$/resources/views/auth/verify.blade.php" />
         <option value="$PROJECT_DIR$/resources/sass/_variables.scss" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
-        <option value="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" />
         <option value="$PROJECT_DIR$/resources/sass/app.scss" />
+        <option value="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" />
       </list>
     </option>
   </component>
@@ -396,7 +345,7 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1463" />
+    <option name="x" value="1462" />
     <option name="y" value="13" />
     <option name="width" value="1945" />
     <option name="height" value="1065" />
@@ -582,14 +531,8 @@
       <workItem from="1566832347145" duration="10249000" />
       <workItem from="1566911682827" duration="18339000" />
       <workItem from="1567024882634" duration="28000" />
-      <workItem from="1567187833586" duration="9142000" />
-    </task>
-    <task id="LOCAL-00055" summary="under construction">
-      <created>1566234321039</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1566234321039</updated>
+      <workItem from="1567187833586" duration="9389000" />
+      <workItem from="1567241608024" duration="818000" />
     </task>
     <task id="LOCAL-00056" summary="under construction">
       <created>1566234567286</created>
@@ -927,11 +870,18 @@
       <option name="project" value="LOCAL" />
       <updated>1567198563818</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="redesign">
+      <created>1567200486037</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1567200486037</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="285319000" />
+    <option name="totallyTimeSpent" value="286384000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -943,16 +893,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1444" y="13" width="1556" height="852" extended-state="0" />
-    <editor active="true" />
+    <frame x="1443" y="13" width="1556" height="852" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.79917186" visible="true" weight="0.18048128" />
-      <window_info id="Structure" order="1" sideWeight="0.20082815" side_tool="true" visible="true" weight="0.18048128" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.79710144" visible="true" weight="0.18315507" />
+      <window_info id="Structure" order="1" sideWeight="0.20289855" side_tool="true" visible="true" weight="0.18315507" />
       <window_info id="npm" order="2" sideWeight="0.20235756" side_tool="true" weight="0.18120806" />
       <window_info id="Favorites" order="3" sideWeight="0.31182796" side_tool="true" weight="0.23271732" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.07777778" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3040346" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3040346" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3968254" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1677,9 +1626,19 @@
     <entry file="file://$PROJECT_DIR$/public/images/logs/cfsclogo5.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4968">
+          <caret line="207" column="24" selection-start-line="207" selection-start-column="24" selection-end-line="207" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
+        <state relative-caret-position="4584">
           <caret line="507" selection-start-line="507" selection-end-line="507" />
           <folding>
             <element signature="e#235#279#0" />
@@ -1753,79 +1712,14 @@
             <element signature="e#9495#9644#0" />
             <element signature="e#9510#9582#0" />
             <element signature="e#9605#9642#0" />
-            <element signature="e#9658#9720#0" />
-            <element signature="e#9731#9812#0" />
-            <element signature="e#9839#10008#0" />
-            <element signature="e#10019#10114#0" />
-            <element signature="e#10142#10612#0" />
-            <element signature="e#10172#10352#0" />
-            <element signature="e#10367#10395#0" />
-            <element signature="e#10408#10496#0" />
-            <element signature="e#10509#10610#0" />
-            <element signature="e#10640#11111#0" />
-            <element signature="e#10670#10850#0" />
-            <element signature="e#10865#10894#0" />
-            <element signature="e#10907#10995#0" />
-            <element signature="e#11008#11109#0" />
-            <element signature="e#11139#11611#0" />
-            <element signature="e#11169#11349#0" />
-            <element signature="e#11364#11392#0" />
-            <element signature="e#11405#11493#0" />
-            <element signature="e#11506#11609#0" />
-            <element signature="e#11639#12242#0" />
-            <element signature="e#11669#11849#0" />
-            <element signature="e#11864#11892#0" />
-            <element signature="e#11905#11993#0" />
-            <element signature="e#12007#12119#0" />
-            <element signature="e#12132#12240#0" />
-            <element signature="e#12270#12855#0" />
-            <element signature="e#12300#12480#0" />
-            <element signature="e#12495#12521#0" />
-            <element signature="e#12534#12622#0" />
-            <element signature="e#12636#12672#0" />
-            <element signature="e#12685#12737#0" />
-            <element signature="e#12750#12853#0" />
-            <element signature="e#12882#13407#0" />
-            <element signature="e#12912#13092#0" />
-            <element signature="e#13107#13134#0" />
-            <element signature="e#13147#13235#0" />
-            <element signature="e#13249#13286#0" />
-            <element signature="e#13299#13405#0" />
-            <element signature="e#13435#13982#0" />
-            <element signature="e#13465#13645#0" />
-            <element signature="e#13660#13719#0" />
-            <element signature="e#13732#13813#0" />
-            <element signature="e#13827#13864#0" />
-            <element signature="e#13877#13980#0" />
-            <element signature="e#14008#14060#0" />
-            <element signature="e#14078#14193#0" />
-            <element signature="e#14082#14129#0" />
-            <element signature="e#14214#14258#0" />
-            <element signature="e#14285#15728#0" />
-            <element signature="e#15756#16119#0" />
-            <element signature="e#15936#16117#0" />
-            <element signature="e#16135#16405#0" />
-            <element signature="e#16421#16687#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2232" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="207" column="24" selection-start-line="207" selection-start-column="24" selection-end-line="207" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/ExampleComponent.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="15" column="53" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="53" />
+        <state relative-caret-position="360">
+          <caret line="15" column="71" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="71" />
         </state>
       </provider>
     </entry>

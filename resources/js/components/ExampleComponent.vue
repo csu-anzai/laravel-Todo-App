@@ -13,8 +13,8 @@
             </div>
             <div id="video-viewport">
                 <video width="1920" autoplay muted loop>
-                    <source src="https://cfscastillo.com/vids/towerink2.mp4" type="video/mp4"/>
-
+                    <source src="https://cfscastillo.com/vids/towerink2.webm" type="video/webm" />
+                    <source src="https://cfscastillo.com/vids/towerink2_2.mp4" type="video/mp4"/>
                 </video>
 
             </div>
