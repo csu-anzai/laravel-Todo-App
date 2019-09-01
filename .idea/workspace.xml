@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c65da59-e47e-417a-8eda-a372494c8e05" name="Default Changelist" comment="" />
+    <list default="true" id="5c65da59-e47e-417a-8eda-a372494c8e05" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,29 +22,79 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/Apache24/conf/extra/httpd-vhosts.conf">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="296">
-              <caret line="89" column="36" selection-start-line="89" selection-start-column="33" selection-end-line="89" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/wp-config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/wp-config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+              <caret line="283" column="9" selection-start-line="283" selection-start-column="9" selection-end-line="283" selection-end-column="9" />
+              <folding>
+                <element signature="n#head#0;n#html#0;n#!!top" />
+                <element signature="n#script#3;n#head#0;n#html#0;n#!!top" />
+                <element signature="e#529#579#0#HTML" />
+                <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#1801#1891#0#HTML" />
+                <element signature="e#1819#1883#0#HTML" />
+                <element signature="e#1919#2200#0#HTML" />
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#transition#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#half-circle-spinner#0;n#transition#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#0#13732#0#Blade" />
+                <element signature="e#3080#3569#0#Blade" />
+                <element signature="n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#a#0;n#div#0;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#transition#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#0#13732#0#Blade" />
+                <element signature="n#img#0;n#transition#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#0#13732#0#Blade" />
+                <element signature="n#img#1;n#transition#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#0#13732#0#Blade" />
+                <element signature="n#button#0;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#button#0;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#0#13732#0#Blade" />
+                <element signature="n#button#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#button#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#transition#0;n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#0;n#transition#0;n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#transition#1;n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#0;n#transition#1;n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#0#13732#0#Blade" />
+                <element signature="n#li#0;n#ul#0;n#transition#1;n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#a#0;n#li#0;n#ul#0;n#transition#1;n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#0#13732#0#Blade" />
+                <element signature="n#li#1;n#ul#0;n#transition#1;n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#a#0;n#li#1;n#ul#0;n#transition#1;n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#0#13732#0#Blade" />
+                <element signature="n#li#2;n#ul#0;n#transition#1;n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#a#0;n#li#2;n#ul#0;n#transition#1;n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#li#2;n#ul#0;n#transition#1;n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#a#0;n#div#0;n#li#2;n#ul#0;n#transition#1;n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#form#0;n#div#0;n#li#2;n#ul#0;n#transition#1;n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#main#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#v-footer#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#v-card#0;n#v-footer#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#v-card-text#0;n#v-card#0;n#v-footer#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#v-btn#0;n#v-card-text#0;n#v-card#0;n#v-footer#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#v-btn#1;n#v-card-text#0;n#v-card#0;n#v-footer#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#v-btn#2;n#v-card-text#0;n#v-card#0;n#v-footer#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#10527#10975#0#Blade" />
+                <element signature="n#div#0;n#v-card#0;n#v-footer#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#v-card#0;n#v-footer#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#p#0;n#div#0;n#div#0;n#v-card#0;n#v-footer#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#a#0;n#p#0;n#div#0;n#div#0;n#v-card#0;n#v-footer#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#a#1;n#p#0;n#div#0;n#div#0;n#v-card#0;n#v-footer#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#v-card#0;n#v-footer#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#script#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#12873#12969#0#HTML" />
+                <element signature="n#script#3;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#13045#13288#0#HTML" />
+                <element signature="e#13323#13703#0#HTML" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -151,7 +204,6 @@
         <option value="$PROJECT_DIR$/public/css/fonts.css" />
         <option value="$PROJECT_DIR$/resources/views/auth/verify.blade.php" />
         <option value="$PROJECT_DIR$/resources/sass/_variables.scss" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/sass/app.scss" />
         <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
@@ -165,6 +217,7 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/node_modules/laravel-mix/src/index.js" />
         <option value="D:/wp-config.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
       </list>
     </option>
   </component>
@@ -279,6 +332,24 @@
             <path>
               <item name="todoApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="todoApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todoApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todoApp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todoApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todoApp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todoApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todoApp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -435,20 +506,7 @@
       <workItem from="1567241608024" duration="1327000" />
       <workItem from="1567258639412" duration="5373000" />
       <workItem from="1567329233778" duration="4600000" />
-    </task>
-    <task id="LOCAL-00060" summary="under construction">
-      <created>1566238620850</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1566238620850</updated>
-    </task>
-    <task id="LOCAL-00061" summary="under construction">
-      <created>1566239923065</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1566239923065</updated>
+      <workItem from="1567367550657" duration="988000" />
     </task>
     <task id="LOCAL-00062" summary="under construction">
       <created>1566241057367</created>
@@ -779,11 +837,25 @@
       <option name="project" value="LOCAL" />
       <updated>1567361729731</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="redesign">
+      <created>1567367659439</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1567367659441</updated>
+    </task>
+    <task id="LOCAL-00110" summary="redesign">
+      <created>1567370036871</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1567370036871</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="301868000" />
+    <option name="totallyTimeSpent" value="302856000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -801,10 +873,10 @@
       <window_info id="Structure" order="0" sideWeight="0.20616883" side_tool="true" weight="0.18926175" />
       <window_info id="npm" order="1" sideWeight="0.20235756" side_tool="true" weight="0.18120806" />
       <window_info id="Favorites" order="2" sideWeight="0.31182796" side_tool="true" weight="0.23271732" />
-      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.79383117" visible="true" weight="0.18791947" />
+      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.79383117" visible="true" weight="0.19060403" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.07777778" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.37083334" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37083334" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3968254" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1221,13 +1293,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="25" column="41" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/laravel-mix/src/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-720" />
@@ -1267,19 +1332,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tasks/Task.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tasks/Task.js" />
+    <entry file="file://$PROJECT_DIR$/src/index.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/webpack-cli/bin/cli.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -1287,13 +1341,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-78">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js" />
     <entry file="file://$PROJECT_DIR$/public_html/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
@@ -1315,11 +1363,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yarn.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-504" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/yarn.lock" />
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1339,22 +1383,97 @@
     </entry>
     <entry file="file://D:/Apache24/conf/extra/httpd-vhosts.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
+        <state relative-caret-position="2136">
           <caret line="89" column="36" selection-start-line="89" selection-start-column="33" selection-end-line="89" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://D:/wp-config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        <state relative-caret-position="312">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/wp-config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="283" column="9" selection-start-line="283" selection-start-column="9" selection-end-line="283" selection-end-column="9" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#script#3;n#head#0;n#html#0;n#!!top" />
+            <element signature="e#529#579#0#HTML" />
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#1801#1891#0#HTML" />
+            <element signature="e#1819#1883#0#HTML" />
+            <element signature="e#1919#2200#0#HTML" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#transition#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#half-circle-spinner#0;n#transition#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#0#13732#0#Blade" />
+            <element signature="e#3080#3569#0#Blade" />
+            <element signature="n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#0;n#div#0;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#transition#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#0#13732#0#Blade" />
+            <element signature="n#img#0;n#transition#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#0#13732#0#Blade" />
+            <element signature="n#img#1;n#transition#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#0#13732#0#Blade" />
+            <element signature="n#button#0;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#button#0;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#0#13732#0#Blade" />
+            <element signature="n#button#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#button#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#transition#0;n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#transition#0;n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#transition#1;n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#transition#1;n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#0#13732#0#Blade" />
+            <element signature="n#li#0;n#ul#0;n#transition#1;n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#0;n#li#0;n#ul#0;n#transition#1;n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#0#13732#0#Blade" />
+            <element signature="n#li#1;n#ul#0;n#transition#1;n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#0;n#li#1;n#ul#0;n#transition#1;n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#0#13732#0#Blade" />
+            <element signature="n#li#2;n#ul#0;n#transition#1;n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#0;n#li#2;n#ul#0;n#transition#1;n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#li#2;n#ul#0;n#transition#1;n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#0;n#div#0;n#li#2;n#ul#0;n#transition#1;n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#form#0;n#div#0;n#li#2;n#ul#0;n#transition#1;n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#main#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#v-footer#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#v-card#0;n#v-footer#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#v-card-text#0;n#v-card#0;n#v-footer#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#v-btn#0;n#v-card-text#0;n#v-card#0;n#v-footer#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#v-btn#1;n#v-card-text#0;n#v-card#0;n#v-footer#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#v-btn#2;n#v-card-text#0;n#v-card#0;n#v-footer#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#10527#10975#0#Blade" />
+            <element signature="n#div#0;n#v-card#0;n#v-footer#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#v-card#0;n#v-footer#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#p#0;n#div#0;n#div#0;n#v-card#0;n#v-footer#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#0;n#p#0;n#div#0;n#div#0;n#v-card#0;n#v-footer#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#1;n#p#0;n#div#0;n#div#0;n#v-card#0;n#v-footer#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#v-card#0;n#v-footer#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#12873#12969#0#HTML" />
+            <element signature="n#script#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#13045#13288#0#HTML" />
+            <element signature="e#13323#13703#0#HTML" />
+          </folding>
         </state>
       </provider>
     </entry>
