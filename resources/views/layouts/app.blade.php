@@ -53,7 +53,6 @@
         js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
-
 <!-- Your customer chat code -->
 <div class="fb-customerchat"
      attribution=setup_tool
@@ -88,7 +87,6 @@
                   </div>
               </div>--}}
         @endif
-
         <nav id="naviCFSC" :class="'navbar navbar-expand-xl shadow-sm   sticky-top '+transparentNav+' '+homePageClass">
             <div class="container-fluid ">
                 <div class="cfsc pl-2  mr-lg-5">
@@ -109,17 +107,38 @@
                         </transition>
                     </a>
                 </div>
-                <button class="navbar-toggler hidden-xl-up" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false"
-                        aria-label="{{ __('Toggle navigation') }}">
+
                     @if(Request::is('/'))
-                        <span class="navbar-dark navbar-toggler-icon"></span>
+                        <button id="navToggler" class="navbar-toggler hidden-xl-up" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
+                            <div class="icon nav-icon-1">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </button>
                     @else
-                        <span class="navbar-light navbar-toggler-icon"></span>
+                    <button id="navToggler" class="navbar-toggler hidden-xl-up" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
+                        <div class="icon nav-icon-1 bg-white" >
+                            <span class="bg-black"></span>
+                            <span class="bg-black"></span>
+                            <span class="bg-black"></span>
+                            <span class="bg-black"></span>
+                            <span class="bg-black"></span>
+                            <span class="bg-black"></span>
+                            <span class="bg-black"></span>
+                            <span class="bg-black"></span>
+                            <span class="bg-black"></span>
+                        </div>
+                    </button>
                     @endif
 
-                </button>
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <transition
                             name="custom-classes-transition"
@@ -127,7 +146,7 @@
                             leave-active-class="animated bounceOutRight"
                     >
                         <ul v-if="loaded" class="navbar-nav  mr-auto MainMenu py-1 ">
-                            <li class="nav-item"><a href="#" class="nav-link nav-link-white">Services</a></li>
+                            <li class="nav-item"><a href="/" class="nav-link nav-link-white">Home</a></li>
                             <li class="nav-item"><a href="#" class="nav-link nav-link-white">Portfolio</a></li>
                             <li class="nav-item"><a href="#" class="nav-link nav-link-white">Contact</a></li>
                         </ul>
@@ -178,12 +197,9 @@
                 </div>
             </div>
         </nav>
-
         <main class="">
             @yield('content')
         </main>
-
-
         <v-footer height="auto">
             <v-card flat tile width="100%" class=" text-center">
                 <v-card-text>
@@ -241,6 +257,7 @@
         google_ad_client: "ca-pub-6198365168970959",
         enable_page_level_ads: true
     });
+
 </script>
 <script>
     // Check that service workers are registered
