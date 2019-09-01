@@ -1,110 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c65da59-e47e-417a-8eda-a372494c8e05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assert.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BabelConfig.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dependencies.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dispatcher.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/File.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FileCollection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Log.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Manifest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mix.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Paths.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/builder/Entry.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/builder/WebpackConfig.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/builder/mock-entry.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/builder/webpack-default.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/builder/webpack-plugins.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/builder/webpack-rules.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Autoload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AutomaticComponent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Browsersync.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Coffee.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Combine.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ComponentFactory.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Components.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Copy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Css.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/DisableNotifications.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/DumpWebpackConfig.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Example.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Extend.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Extract.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/JavaScript.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Less.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Notifications.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PostCss.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Preact.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Preprocessor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PurifyCss.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/React.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Sass.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Stylus.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TypeScript.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Version.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tasks/ConcatenateFilesTask.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tasks/CopyFilesTask.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tasks/Task.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tasks/VersionFilesTask.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webpackPlugins/BuildCallbackPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webpackPlugins/CssPurifierPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webpackPlugins/CustomTasksPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webpackPlugins/ManifestPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webpackPlugins/MixDefinitionsPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webpackPlugins/MockEntryPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/cacert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/cacert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/css/animate.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/animation.css" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/css/animation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/css/fonts.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/ETCTrispace/ETCTrispace-Regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/fonts/ETCTrispace/ETCTrispace-Regular.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/ETCTrispace/ETCTrispace-RegularCondensed.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/fonts/ETCTrispace/ETCTrispace-RegularCondensed.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/ETCTrispace/ETCTrispace-RegularExtended.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/fonts/ETCTrispace/ETCTrispace-RegularExtended.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/ETCTrispace/ETCTrispace-RegularNarrow.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/fonts/ETCTrispace/ETCTrispace-RegularNarrow.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/ETCTrispace/ETCTrispace-RegularWide.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/fonts/ETCTrispace/ETCTrispace-RegularWide.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/ETCTrispace/ETCTrispaceVariable.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/fonts/ETCTrispace/ETCTrispaceVariable.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/ETCTrispace/etctrispacevariable-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/fonts/ETCTrispace/etctrispacevariable-webfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/ETCTrispace/etctrispacevariable-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/fonts/ETCTrispace/etctrispacevariable-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/ETCTrispace/etctrispacevariable-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/fonts/ETCTrispace/etctrispacevariable-webfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/ETCTrispace/etctrispacevariable-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/fonts/ETCTrispace/etctrispacevariable-webfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/ETCTrispace/etctrispacevariable-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/fonts/ETCTrispace/etctrispacevariable-webfont.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/fa-brands-400.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/fonts/fa-brands-400.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/fa-brands-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/fonts/fa-brands-400.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/fa-brands-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/fonts/fa-brands-400.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/fa-brands-400.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/fonts/fa-brands-400.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/fa-brands-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/fonts/fa-brands-400.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/fa-solid-900.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/fonts/fa-solid-900.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/fa-solid-900.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/fonts/fa-solid-900.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/fa-solid-900.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/fonts/fa-solid-900.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/fa-solid-900.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/fonts/fa-solid-900.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/fa-solid-900.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/fonts/fa-solid-900.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/cfsclogo5.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/images/cfsclogo5.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/cfsclogo5white.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/images/cfsclogo5white.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/logs/cfsc logo5.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/images/logs/cfsc logo5.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/logs/cfsclogo5.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/images/logs/cfsclogo5.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/robots.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vids/towerink2.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/vids/towerink2.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vids/towerink2.webm" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/vids/towerink2.webm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vids/towerink2_2.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/vids/towerink2_2.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
-    </list>
+    <list default="true" id="5c65da59-e47e-417a-8eda-a372494c8e05" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,23 +50,48 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="4" column="126" selection-start-line="4" selection-start-column="126" selection-end-line="4" selection-end-column="157" />
+            <state relative-caret-position="120">
+              <caret line="14" column="14" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="14" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/yarn.lock">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-504" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node_modules/laravel-mix/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+            <state relative-caret-position="288">
+              <caret line="51" column="14" lean-forward="true" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="5206" column="12" selection-start-line="5206" selection-start-column="12" selection-end-line="5206" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="142">
+              <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -204,27 +126,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webpack.config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-78">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public_html/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="257">
@@ -245,8 +146,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>display-4</find>
-      <find>jumbotron</find>
       <find>1200</find>
       <find>triple8</find>
       <find>btn-lg</find>
@@ -275,6 +174,8 @@
       <find>public</find>
       <find>entry:</find>
       <find>webpack.config.js</find>
+      <find>base_path</find>
+      <find>axios</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -348,10 +249,10 @@
         <option value="$PROJECT_DIR$/webpack.mix.js" />
         <option value="D:/Apache24/conf/extra/httpd-vhosts.conf" />
         <option value="$PROJECT_DIR$/resources/js/app.js" />
-        <option value="$PROJECT_DIR$/node_modules/laravel-mix/src/index.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/node_modules/laravel-mix/src/index.js" />
       </list>
     </option>
   </component>
@@ -622,13 +523,6 @@
       <workItem from="1567241608024" duration="1327000" />
       <workItem from="1567258639412" duration="5373000" />
       <workItem from="1567329233778" duration="4600000" />
-    </task>
-    <task id="LOCAL-00058" summary="under construction">
-      <created>1566238238546</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1566238238547</updated>
     </task>
     <task id="LOCAL-00059" summary="under construction">
       <created>1566238574729</created>
@@ -966,11 +860,18 @@
       <option name="project" value="LOCAL" />
       <updated>1567358323839</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="redesign">
+      <created>1567361162134</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1567361162134</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="299471000" />
+    <option name="totallyTimeSpent" value="300109000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -988,10 +889,10 @@
       <window_info id="Structure" order="0" sideWeight="0.20616883" side_tool="true" weight="0.18926175" />
       <window_info id="npm" order="1" sideWeight="0.20235756" side_tool="true" weight="0.18120806" />
       <window_info id="Favorites" order="2" sideWeight="0.31182796" side_tool="true" weight="0.23271732" />
-      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.79383117" visible="true" weight="0.18791947" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.79383117" visible="true" weight="0.18791947" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.07777778" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37083334" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.37083334" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3968254" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1037,27 +938,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="redesign" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Notifications/UserRegisteredSuccessfully.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-336">
-          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Notifications/UserRegisteredSuccessfullyNoVerify.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4">
-          <caret line="53" column="69" selection-start-line="53" selection-start-column="69" selection-end-line="53" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="40" column="1" lean-forward="true" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2019-08-21.log" />
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1406,13 +1286,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="383">
@@ -1526,25 +1399,51 @@
     <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-78">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/laravel-mix/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+        <state relative-caret-position="288">
+          <caret line="51" column="14" lean-forward="true" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="5206" column="12" selection-start-line="5206" selection-start-column="12" selection-end-line="5206" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="4" column="126" selection-start-line="4" selection-start-column="126" selection-end-line="4" selection-end-column="157" />
+        <state relative-caret-position="120">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="14" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yarn.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-504" />
       </provider>
     </entry>
   </component>
