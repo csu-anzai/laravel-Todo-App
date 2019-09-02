@@ -3,7 +3,7 @@
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
-__webpack_public_path__ = process.env.ASSET_PATH;
+
 require('./bootstrap');
 
 window.Vue = require('vue');
@@ -68,18 +68,19 @@ new Vue({
         scrolledTop: true,
         transparentNav: 'transparentNav',
         loaded: false,
-
+        socialIconsBackground: "",
+        dataToggleBackground: "",
+        dataToggleBackgroundSpan:"",
         homePageClass: "",
         uploadedNewImage: 0,
+        logoImage:"",
         user: {
-
             avatar: userAvatar
         },
         message: "ready",
         token: csrf_token,
         userID: userID,
         tempImage: ""
-
     },
     methods: {
         scroll() {
@@ -93,7 +94,6 @@ new Vue({
                     this.transparentNav = '';
                 }
             }
-
         },
         loadSite() {
             setTimeout(() => {
@@ -150,6 +150,10 @@ new Vue({
     beforeMount() {
         this.startSite();
         this.homePageClass = this.currentRoute === "/" ? "homePageClass" : "notHomePageClass";
+        this.socialIconsBackground = this.currentRoute === "/" ? "dark" : "light";
+        this.dataToggleBackground = this.currentRoute === "/" ? "bg-black" : "bg-white";
+        this.dataToggleBackgroundSpan = this.currentRoute === "/" ? "bg-white" : "bg-black";
+        this.logoImage = this.currentRoute === "/" ? "images/cfsclogo5white.svg" : "images/cfsclogo5.svg";
 
     },
     created() {
