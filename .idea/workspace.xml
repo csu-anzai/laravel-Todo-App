@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5c65da59-e47e-417a-8eda-a372494c8e05" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public_html/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/.htaccess" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,8 +105,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public_html/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="223" selection-start-line="223" selection-end-line="223" />
+            <state>
               <folding>
                 <element signature="n#IfModule#13" />
               </folding>
@@ -408,8 +406,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1532" />
-    <option name="y" value="23" />
+    <option name="x" value="1473" />
+    <option name="y" value="44" />
     <option name="width" value="1728" />
     <option name="height" value="980" />
   </component>
@@ -605,21 +603,7 @@
       <workItem from="1567329233778" duration="4600000" />
       <workItem from="1567367550657" duration="5774000" />
       <workItem from="1567403378305" duration="9392000" />
-      <workItem from="1567447345530" duration="11747000" />
-    </task>
-    <task id="LOCAL-00068" summary="under construction">
-      <created>1566246749008</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1566246749008</updated>
-    </task>
-    <task id="LOCAL-00069" summary="under construction">
-      <created>1566246775063</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1566246775063</updated>
+      <workItem from="1567447345530" duration="12169000" />
     </task>
     <task id="LOCAL-00070" summary="under construction">
       <created>1566248203003</created>
@@ -950,11 +934,25 @@
       <option name="project" value="LOCAL" />
       <updated>1567508987802</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="redesign">
+      <created>1567512572528</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1567512572528</updated>
+    </task>
+    <task id="LOCAL-00118" summary="redesign">
+      <created>1567512956588</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1567512956588</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="328781000" />
+    <option name="totallyTimeSpent" value="329203000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -966,7 +964,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1499" y="21" width="1382" height="784" extended-state="0" />
+    <frame x="1452" y="38" width="1382" height="784" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.20616883" side_tool="true" weight="0.18926175" />
       <window_info id="npm" order="1" sideWeight="0.20235756" side_tool="true" weight="0.18120806" />
@@ -1437,8 +1436,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public_html/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="223" selection-start-line="223" selection-end-line="223" />
+        <state>
           <folding>
             <element signature="n#IfModule#13" />
           </folding>
