@@ -17,7 +17,7 @@
                 </div>
             </div>
             <div id="video-viewport">
-                <video poster="vids/towerink2.gif" width="1920" autoplay muted loop>
+                <video poster="vids/towerink.gif" width="1920" autoplay muted loop>
                     <source src="vids/towerink2.webm" type="video/webm"/>
                     <source src="vids/towerink2_2.mp4" type="video/mp4"/>
                 </video>
