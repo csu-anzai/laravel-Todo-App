@@ -160,7 +160,7 @@ Header append Vary: Accept-Encoding
 	RewriteCond %{QUERY_STRING} (\\|\.\.\.|\.\./|~|`|<|>|\|) [NC,OR]
 	RewriteCond %{QUERY_STRING} (boot\.ini|etc/passwd|self/environ) [NC,OR]
 	RewriteCond %{QUERY_STRING} (thumbs?(_editor|open)?|tim(thumb)?)\.php [NC,OR]
-	RewriteCond %{QUERY_STRING} (\'|\")(.*)(drop|insert|md5|select|union) [NC]
+
 	RewriteRule .* - [F]
 </IfModule>
 <IfModule mod_rewrite.c>
@@ -201,10 +201,10 @@ Header append Vary: Accept-Encoding
     RewriteEngine On
     RewriteCond %{HTTPS} !on
     RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
-RewriteCond %{HTTP_HOST} ^www\.
-RewriteCond %{HTTPS}s ^on(s)|off
-RewriteCond http%1://%{HTTP_HOST} ^(https?://)(www\.)?(.+)$
-RewriteRule ^ %1%3%{REQUEST_URI} [R=301,L]
+    RewriteCond %{HTTP_HOST} ^www\.
+    RewriteCond %{HTTPS}s ^on(s)|off
+    RewriteCond http%1://%{HTTP_HOST} ^(https?://)(www\.)?(.+)$
+    RewriteRule ^ %1%3%{REQUEST_URI} [R=301,L]
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
