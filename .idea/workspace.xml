@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c65da59-e47e-417a-8eda-a372494c8e05" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public_html/vids/towerlink.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public_html/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public_html/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +47,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="175">
@@ -75,25 +70,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/js/components/ExampleComponent.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="617">
-              <caret line="158" column="26" selection-start-line="158" selection-start-column="26" selection-end-line="158" selection-end-column="26" />
+            <state relative-caret-position="72">
+              <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
               <folding>
-                <element signature="n#template#0;n#!!top" />
-                <element signature="n#div#0;n#template#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#transition#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#h1#0;n#transition#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#transition#1;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#transition#2;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" />
-                <element signature="n#video#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#template#0;n#!!top" />
                 <element signature="e#1227#1464#0" />
                 <element signature="e#1383#1418#0" />
                 <element signature="e#1493#2241#0" />
@@ -204,7 +193,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>public</find>
       <find>entry:</find>
       <find>webpack.config.js</find>
       <find>axios</find>
@@ -231,8 +219,9 @@
       <find>duration</find>
       <find>color</find>
       <find>enter-active-class</find>
-      <find>nav-item</find>
       <find>dataToggleBackground</find>
+      <find>nav-item</find>
+      <find>Logi</find>
       <find>1000px</find>
     </findStrings>
     <replaceStrings>
@@ -309,10 +298,10 @@
         <option value="D:/wp-config.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/resources/sass/_variables.scss" />
-        <option value="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" />
         <option value="$PROJECT_DIR$/resources/sass/app.scss" />
         <option value="$PROJECT_DIR$/resources/js/app.js" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" />
       </list>
     </option>
   </component>
@@ -409,11 +398,11 @@
       <path value="$PROJECT_DIR$/vendor/laravel/socialite" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1463" />
-    <option name="y" value="13" />
-    <option name="width" value="1830" />
-    <option name="height" value="880" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1532" />
+    <option name="y" value="23" />
+    <option name="width" value="1728" />
+    <option name="height" value="980" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -427,6 +416,17 @@
             <path>
               <item name="todoApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="todoApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todoApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todoApp" type="462c0819:PsiDirectoryNode" />
+              <item name="public_html" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todoApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todoApp" type="462c0819:PsiDirectoryNode" />
+              <item name="public_html" type="462c0819:PsiDirectoryNode" />
+              <item name="vids" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="todoApp" type="b2602c69:ProjectViewProjectNode" />
@@ -502,7 +502,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="npm.production">
     <configuration default="true" type="NodeJSConfigurationType" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -538,8 +538,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev" />
         <item itemvalue="npm.production" />
+        <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
   </component>
@@ -602,21 +602,7 @@
       <workItem from="1567329233778" duration="4600000" />
       <workItem from="1567367550657" duration="5774000" />
       <workItem from="1567403378305" duration="9392000" />
-      <workItem from="1567447345530" duration="7825000" />
-    </task>
-    <task id="LOCAL-00064" summary="under construction">
-      <created>1566242760633</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1566242760633</updated>
-    </task>
-    <task id="LOCAL-00065" summary="under construction">
-      <created>1566244970097</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1566244970097</updated>
+      <workItem from="1567447345530" duration="10277000" />
     </task>
     <task id="LOCAL-00066" summary="under construction">
       <created>1566245053551</created>
@@ -947,11 +933,25 @@
       <option name="project" value="LOCAL" />
       <updated>1567370487372</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="redesign">
+      <created>1567455248343</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1567455248344</updated>
+    </task>
+    <task id="LOCAL-00114" summary="redesign">
+      <created>1567455351384</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1567455351384</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="324859000" />
+    <option name="totallyTimeSpent" value="327311000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -963,16 +963,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1359" y="6" width="1550" height="878" extended-state="6" />
-    <editor active="true" />
+    <frame x="1499" y="21" width="1382" height="784" extended-state="0" />
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.20616883" side_tool="true" weight="0.18926175" />
       <window_info id="npm" order="1" sideWeight="0.20235756" side_tool="true" weight="0.18120806" />
       <window_info id="Favorites" order="2" sideWeight="0.31182796" side_tool="true" weight="0.23271732" />
-      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.79383117" visible="true" weight="0.17057292" />
+      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.79383117" visible="true" weight="0.19152047" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.07671601" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.16689098" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.19106318" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39569312" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1301,6 +1300,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#221#0" />
+            <element signature="e#1966#2013#0" expanded="true" />
+            <element signature="e#2853#3400#0" />
+            <element signature="e#2891#3389#0" />
+            <element signature="e#3421#3514#0" />
+            <element signature="e#3536#3638#0" />
+            <element signature="e#3657#3700#0" />
+            <element signature="e#3737#4193#0" />
+            <element signature="e#4228#4748#0" />
+            <element signature="e#4795#4855#0" />
+            <element signature="e#4898#4970#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1365,44 +1384,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+        <state relative-caret-position="175">
+          <caret line="102" column="114" selection-start-line="102" selection-start-column="114" selection-end-line="102" selection-end-column="114" />
           <folding>
-            <element signature="e#0#221#0" />
-            <element signature="e#1966#2013#0" expanded="true" />
-            <element signature="e#2853#3400#0" />
-            <element signature="e#2891#3389#0" />
-            <element signature="e#3421#3514#0" />
-            <element signature="e#3536#3638#0" />
-            <element signature="e#3657#3700#0" />
-            <element signature="e#3737#4193#0" />
-            <element signature="e#4228#4748#0" />
-            <element signature="e#4795#4855#0" />
-            <element signature="e#4898#4970#0" />
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#script#3;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#3492#3582#0#HTML" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#button#0;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#transition#0;n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#1;n#ul#0;n#transition#1;n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#li#1;n#ul#0;n#transition#1;n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#4;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/ExampleComponent.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="158" column="26" selection-start-line="158" selection-start-column="26" selection-end-line="158" selection-end-column="26" />
+        <state relative-caret-position="72">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
           <folding>
-            <element signature="n#template#0;n#!!top" />
-            <element signature="n#div#0;n#template#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#template#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
             <element signature="n#transition#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
             <element signature="n#h1#0;n#transition#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
             <element signature="n#transition#1;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
             <element signature="n#transition#2;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#video#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" />
             <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#template#0;n#!!top" />
             <element signature="e#1227#1464#0" />
             <element signature="e#1383#1418#0" />
             <element signature="e#1493#2241#0" />
@@ -1421,27 +1435,6 @@
             <element signature="e#5664#5758#0" />
             <element signature="e#5768#5838#0" />
             <element signature="n#style#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="102" column="114" selection-start-line="102" selection-start-column="114" selection-end-line="102" selection-end-column="114" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" />
-            <element signature="n#script#3;n#head#0;n#html#0;n#!!top" />
-            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#3492#3582#0#HTML" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#button#0;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#transition#0;n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#1;n#ul#0;n#transition#1;n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#li#1;n#ul#0;n#transition#1;n#div#1;n#div#0;n#nav#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#4;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
